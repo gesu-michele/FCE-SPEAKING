@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambridge B2 First (FCE) - Speaking Mastery Suite - Dr. Jesús Miguel Lima E.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'AnanthaSignature';
+      src: url('Anantha%20Signature%20For%20Personal%20Use.ttf') format('truetype'),
+           url('Anantha Signature For Personal Use.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    :root {
+      --bg-canvas: #040914;
+      --bg-panel: #0a1324;
+      --bg-card: #101d36;
+      --bg-card-inner: #070e1c;
+      --border-subtle: #1c2e4c;
+      --border-gold: rgba(212, 175, 55, 0.4);
+      --accent-gold: #d4af37;
+      --accent-gold-soft: rgba(212, 175, 55, 0.12);
+      --accent-blue: #2563eb;
+      --accent-blue-light: #60a5fa;
+      --cambridge-brand-red: #c8102e;
+      --cambridge-brand-dark: #0a1b3a;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --shadow-deep: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      min-height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 90% 10%, rgba(37, 99, 235, 0.16) 0%, transparent 55%),
+        radial-gradient(circle at 10% 90%, rgba(212, 175, 55, 0.1) 0%, transparent 55%),
+        linear-gradient(to bottom, #030710, #081120);
+    }
+
+    #app-viewport {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .top-nav {
+      height: 58px;
+      background: rgba(6, 12, 23, 0.95);
+      border-bottom: 1px solid rgba(28, 46, 76, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 36px;
+      backdrop-filter: blur(12px);
+      z-index: 10;
+    }
+
+    .nav-brand-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .cambridge-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ffffff;
+      padding: 4px 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+      user-select: none;
+    }
+
+    .cambridge-shield {
+      width: 16px;
+      height: 16px;
+      fill: var(--cambridge-brand-red);
+    }
+
+    .cambridge-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      color: var(--cambridge-brand-dark);
+      letter-spacing: -0.2px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .cambridge-level {
+      font-size: 8.5px;
+      font-weight: 800;
+      color: var(--cambridge-brand-red);
+      margin-top: -4px;
+    }
+
+    .nav-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+    }
+
+    .nav-brand-right {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .coin-display {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--accent-gold);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--accent-gold);
+    }
+
+    .company-logo-slot {
+      height: 38px;
+      max-width: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .company-logo-slot img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    .progress-track {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent-blue-light);
+      background: rgba(37, 99, 235, 0.14);
+      border: 1px solid rgba(96, 165, 250, 0.3);
+      padding: 4px 12px;
+      border-radius: 5px;
+    }
+
+    .screen-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .slide {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    /* COVER SCREEN */
+    .cover-fullscreen {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 44px 80px 40px 80px;
+      max-width: 1560px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .cover-top-badge-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .cover-headings-group {
+      margin-bottom: 8px;
+    }
+
+    .main-section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(26px, 3.2vw, 42px);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: #38bdf8;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .main-task-title {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(44px, 5.8vw, 80px);
+      font-weight: 900;
+      line-height: 1.0;
+      letter-spacing: -0.04em;
+      color: #ffffff;
+    }
+
+    .welcome-text-block {
+      max-width: 860px;
+      border-left: 3px solid var(--accent-gold);
+      padding-left: 24px;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .welcome-en {
+      font-size: clamp(15.5px, 1.25vw, 19px);
+      color: #f1f5f9;
+      line-height: 1.65;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+    }
+
+    .cover-bottom-row {
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding-top: 24px;
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: nowrap;
+      gap: 32px;
+      width: 100%;
+    }
+
+    .signature-container {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .signature-name-wrapper {
+      margin-bottom: 12px;
+      padding-bottom: 4px;
+      white-space: nowrap;
+    }
+
+    .signature-name {
+      font-family: 'AnanthaSignature', cursive, sans-serif;
+      font-size: clamp(34px, 3.4vw, 56px);
+      font-weight: normal;
+      color: #ffffff;
+      line-height: 1.35;
+      display: inline-block;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .signature-roles {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .signature-roles span {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(11px, 0.9vw, 12.5px);
+      font-weight: 600;
+      color: #cbd5e1;
+      letter-spacing: 0.8px;
+      line-height: 1.4;
+    }
+
+    .signature-roles span.role-highlight {
+      color: var(--accent-gold);
+      font-weight: 700;
+    }
+
+    .cover-action-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-shrink: 0;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-launch-large {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(14px, 1.05vw, 16px);
+      font-weight: 700;
+      padding: 14px 30px;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 1px solid rgba(96, 165, 250, 0.5);
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .btn-launch-large:hover {
+      background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(37, 99, 235, 0.5);
+    }
+
+    /* CURRICULUM STAGE */
+    .center-stage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      padding: 40px 20px;
+      flex: 1;
+      max-width: 1140px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .center-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent-blue-light);
+      background: rgba(37, 99, 235, 0.15);
+      border: 1px solid rgba(96, 165, 250, 0.3);
+      padding: 6px 16px;
+      border-radius: 9999px;
+      margin-bottom: 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .center-title {
+      font-size: clamp(28px, 2.5vw, 36px);
+      font-weight: 800;
+      margin-bottom: 12px;
+      line-height: 1.25;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .progress-summary-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 24px 28px;
+      width: 100%;
+      box-shadow: var(--shadow-deep);
+      text-align: left;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .block-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 20px;
+      background: var(--bg-card-inner);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      gap: 16px;
+      transition: all 0.2s ease;
+    }
+
+    .block-row.unlocked {
+      border-color: rgba(37, 99, 235, 0.4);
+    }
+
+    .block-row.unlocked:hover {
+      border-color: var(--accent-blue-light);
+      background: rgba(16, 29, 54, 0.9);
+    }
+
+    .block-row.current {
+      border-color: var(--accent-blue);
+      border-left: 5px solid var(--accent-blue);
+    }
+
+    .block-row.completed {
+      border-color: rgba(16, 185, 129, 0.4);
+      border-left: 5px solid #10b981;
+    }
+
+    .block-row.locked {
+      opacity: 0.45;
+    }
+
+    .block-info h4 {
+      font-size: 16px;
+      color: #ffffff;
+      margin-bottom: 4px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+    }
+
+    .block-info span {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.4;
+      display: block;
+    }
+
+    .block-score-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent-gold);
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-top: 6px;
+    }
+
+    .block-actions-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn-block-launch {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 10px 18px;
+      border-radius: 6px;
+      border: 1px solid var(--accent-blue-light);
+      background: rgba(37, 99, 235, 0.25);
+      color: #ffffff;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .btn-block-launch:hover {
+      background: var(--accent-blue);
+      box-shadow: 0 0 12px rgba(37, 99, 235, 0.6);
+      transform: translateY(-1px);
+    }
+
+    .btn-block-launch.review {
+      border-color: rgba(16, 185, 129, 0.4);
+      background: rgba(16, 185, 129, 0.15);
+      color: #a7f3d0;
+    }
+
+    .btn-block-launch.review:hover {
+      background: #10b981;
+      color: #040914;
+      box-shadow: 0 0 12px rgba(16, 185, 129, 0.5);
+    }
+
+    .bottom-bar {
+      padding: 18px 40px;
+      background: rgba(6, 12, 23, 0.95);
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .btn-act {
+      font-family: 'Inter', sans-serif;
+      font-size: 13.5px;
+      font-weight: 700;
+      padding: 11px 22px;
+      border-radius: 7px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border-color: var(--border-subtle);
+      color: #cbd5e1;
+    }
+
+    .btn-outline:hover {
+      background: var(--bg-card);
+      color: #ffffff;
+    }
+
+    .institutional-bottom {
+      padding: 10px 36px;
+      background: #03060d;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11px;
+      color: #64748b;
+    }
+
+    .institutional-bottom strong {
+      color: #cbd5e1;
+    }
+
+    /* MODAL: CANDIDATE CONFIGURATION */
+    .modal-veil {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.88);
+      backdrop-filter: blur(12px);
+      display: none;
+      place-items: center;
+      z-index: 500;
+      padding: 20px;
+    }
+
+    .modal-veil.active {
+      display: grid;
+    }
+
+    .modal-box-setup {
+      background: #0a1324;
+      border: 2px solid #2563eb;
+      border-radius: 20px;
+      max-width: 860px;
+      width: 100%;
+      padding: 38px 40px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85);
+      text-align: center;
+      position: relative;
+    }
+
+    .setup-header-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #60a5fa;
+      background: rgba(37, 99, 235, 0.2);
+      border: 1px solid rgba(96, 165, 250, 0.4);
+      padding: 5px 14px;
+      border-radius: 999px;
+      display: inline-block;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .setup-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 28px;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .setup-subtitle {
+      font-size: 15px;
+      color: #94a3b8;
+      max-width: 650px;
+      margin: 0 auto 28px auto;
+      line-height: 1.5;
+    }
+
+    .modes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+
+    @media (max-width: 768px) {
+      .modes-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .mode-card {
+      background: #101d36;
+      border: 2px solid #1c2e4c;
+      border-radius: 14px;
+      padding: 24px 18px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+
+    .mode-card:hover {
+      border-color: #60a5fa;
+      background: #152646;
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+    }
+
+    .mode-icon-cluster {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 32px;
+      line-height: 1;
+      height: 40px;
+    }
+
+    .mode-name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 19px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .mode-desc {
+      font-size: 12.5px;
+      color: #94a3b8;
+      line-height: 1.45;
+    }
+
+    .mode-specs {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.1);
+      padding: 4px 8px;
+      border-radius: 6px;
+      margin-top: 6px;
+      font-weight: 700;
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 16px;
+      right: 18px;
+      background: transparent;
+      border: none;
+      color: #64748b;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .modal-close-btn:hover {
+      color: #ffffff;
+    }
+
+    @media (max-width: 860px) {
+      .cover-fullscreen {
+        padding: 36px 20px 24px 20px;
+      }
+      .top-nav {
+        padding: 0 18px;
+      }
+      .bottom-bar {
+        padding: 14px 20px;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+      }
+      .cover-bottom-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .signature-name {
+        font-size: 32px;
+      }
+      .cover-action-wrapper {
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .btn-launch-large {
+        width: 100%;
+        justify-content: center;
+      }
+      .welcome-text-block {
+        margin-top: 36px;
+      }
+      .block-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .block-actions-group {
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .institutional-bottom {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+        padding: 12px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="app-viewport">
+    
+    <!-- TOP NAVIGATION -->
+    <div class="top-nav" id="topNav" style="display: none;">
+      <div class="nav-brand-left">
+        <div class="cambridge-badge">
+          <svg class="cambridge-shield" viewBox="0 0 24 24">
+            <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm0 2.18l6 2.25v4.66c0 4.14-2.73 8.02-6 9.11-3.27-1.09-6-4.97-6-9.11V6.43l6-2.25z"/>
+          </svg>
+          <span class="cambridge-name">Cambridge</span>
+          <span class="cambridge-level">B2</span>
+        </div>
+        <span class="nav-title">B2 First: Speaking Mastery Suite</span>
+      </div>
+
+      <div class="nav-brand-right">
+        <div class="coin-display">
+          <span>🪙</span> <span id="navCoins">100</span>
+        </div>
+        <div class="progress-track" id="navPageTrack">Speaking Index</div>
+        <div class="company-logo-slot">
+          <img src="https://lh3.googleusercontent.com/d/1EksYLoHp7voak-Ka3Y3txyiGM15DMPTP" alt="JM ELT Solutions" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </div>
+
+    <!-- MOUNT CONTAINER -->
+    <div class="screen-container" id="mountNode"></div>
+
+    <!-- INSTITUTIONAL FOOTER -->
+    <div class="institutional-bottom">
+      <span>Cambridge B2 First: Complete Speaking Mock Series (Mocks 01–30)</span>
+      <span>All Rights Reserved © by <strong>Dr. Jesús Miguel Lima E.</strong> • JM ELT Solutions</span>
+    </div>
+
+  </div>
+
+  <!-- CANDIDATE SELECTION MODAL (1, 2, or 3 Candidates) -->
+  <div class="modal-veil" id="modalSetupFormat">
+    <div class="modal-box-setup">
+      <button class="modal-close-btn" onclick="closeSetupModal()">✕</button>
+      <span class="setup-header-badge">Examiner Control Panel</span>
+      <h2 class="setup-title" id="setupModalTargetTitle">Speaking Mock Exam</h2>
+      <p class="setup-subtitle">
+        How many candidates are taking this test today? Select your exam format to automatically load the calibrated test version:
+      </p>
+
+      <div class="modes-grid">
+        <!-- MODE 1: SOLO CANDIDATE CON AI PARTNER -->
+        <div class="mode-card" onclick="confirmLaunchWithMode('solo')">
+          <div class="mode-icon-cluster">
+            <span>👤</span>
+          </div>
+          <h3 class="mode-name">Solo Candidate</h3>
+          <p class="mode-desc">1 Student with <strong>AI Virtual Partner (Candidate A)</strong>. Emily models C1 answers, leads 15s turn-taking, and discusses collaborative tasks.</p>
+          <div class="mode-specs">1 Student + AI Partner</div>
+        </div>
+
+        <!-- MODE 2: PAIR FORMAT (ESTÁNDAR CAMBRIDGE) -->
+        <div class="mode-card" onclick="confirmLaunchWithMode('pair')">
+          <div class="mode-icon-cluster">
+            <span>👤</span>
+            <span>👤</span>
+          </div>
+          <h3 class="mode-name">Pair Format</h3>
+          <p class="mode-desc">Standard official examination for <strong>Candidate A & Candidate B</strong> with synchronized turn timers.</p>
+          <div class="mode-specs">Two Real Candidates</div>
+        </div>
+
+        <!-- MODE 3: TRIO FORMAT (FORMATO GRUPO DE 3) -->
+        <div class="mode-card" onclick="confirmLaunchWithMode('trio')">
+          <div class="mode-icon-cluster">
+            <span>👤</span>
+            <span>👤</span>
+            <span>👤</span>
+          </div>
+          <h3 class="mode-name">Trio Format</h3>
+          <p class="mode-desc">Official format for three candidates: <strong>Candidate A, Candidate B & Candidate C</strong> with extended timings (6m Part 2, 3m Part 3).</p>
+          <div class="mode-specs">Three Real Candidates</div>
+        </div>
+      </div>
+
+      <div style="font-size:12.5px; color:#64748b; font-family:'JetBrains Mono';">
+        💡 You can pause or add +15s to any turn during the live test session using the examiner control toolbar.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const STORAGE_KEY = "fce_speaking_trainer_v1";
+    let activeScreen = 1;
+    let pendingMockIdStr = "01";
+    let pendingMockTitle = "";
+
+    let session = {
+      firstName: "Teacher",
+      coins: 100,
+      unlockedMocks: ["speaking_mock_01_complete"],
+      speakingScores: {}
+    };
+
+    function initData() {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        try {
+          const parsed = JSON.parse(raw);
+          session = { ...session, ...parsed };
+        } catch (e) {
+          console.error("Error reading session from localStorage:", e);
+        }
+      }
+
+      if (!session.unlockedMocks || session.unlockedMocks.length === 0) {
+        session.unlockedMocks = ["speaking_mock_01_complete"];
+      }
+      if (!session.speakingScores) {
+        session.speakingScores = {};
+      }
+
+      // Progresión secuencial: aprobar un mock desbloquea automáticamente el siguiente (del 01 al 30)
+      for (let i = 1; i <= 29; i++) {
+        const idCurrent = String(i).padStart(2, '0');
+        const idNext = String(i + 1).padStart(2, '0');
+        const currentKey = `speaking_mock_${idCurrent}_complete`;
+        const nextKey = `speaking_mock_${idNext}_complete`;
+        if (session.speakingScores[currentKey] && session.speakingScores[currentKey].completed) {
+          if (!session.unlockedMocks.includes(nextKey)) {
+            session.unlockedMocks.push(nextKey);
+          }
+        }
+      }
+
+      syncStorage();
+    }
+
+    function syncStorage() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(session));
+      const elCoins = document.getElementById('navCoins');
+      if (elCoins) elCoins.innerText = session.coins || 100;
+    }
+
+    function setScreen(step) {
+      activeScreen = step;
+      render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Al pulsar el botón, guardamos el identificador de 2 dígitos del mock (ej. "01", "02")
+    function openCandidateSetup(idStr, mockTitle) {
+      pendingMockIdStr = idStr;
+      pendingMockTitle = mockTitle;
+      const titleEl = document.getElementById('setupModalTargetTitle');
+      if (titleEl) titleEl.innerText = mockTitle;
+      const modal = document.getElementById('modalSetupFormat');
+      if (modal) modal.classList.add('active');
+    }
+
+    function closeSetupModal() {
+      const modal = document.getElementById('modalSetupFormat');
+      if (modal) modal.classList.remove('active');
+    }
+
+    // Redirección directa hacia el archivo específico según la modalidad seleccionada
+    function confirmLaunchWithMode(mode) {
+      localStorage.setItem("fce_speaking_current_mode", mode);
+      
+      const modal = document.getElementById('modalSetupFormat');
+      if (modal) modal.classList.remove('active');
+
+      let targetUrl = "";
+      if (mode === 'solo') {
+        targetUrl = `./speaking_mock_${pendingMockIdStr}_single_ai_partner.html`;
+      } else if (mode === 'trio') {
+        targetUrl = `./speaking_mock_${pendingMockIdStr}_trio_edition.html`;
+      } else {
+        // Modo estándar de pareja (2 candidatos)
+        targetUrl = `./speaking_mock_${pendingMockIdStr}_signature_edition.html`;
+      }
+
+      window.location.href = targetUrl;
+    }
+
+    function render() {
+      const mount = document.getElementById('mountNode');
+      const nav = document.getElementById('topNav');
+      const track = document.getElementById('navPageTrack');
+      mount.innerHTML = '';
+
+      if (activeScreen === 1) {
+        nav.style.display = 'none';
+        renderCover(mount);
+      } else if (activeScreen === 2) {
+        nav.style.display = 'flex';
+        track.innerText = 'Speaking Mock Exams Roadmap (01–30)';
+        renderCurriculum(mount);
+      }
+      syncStorage();
+    }
+
+    function renderCover(mount) {
+      mount.innerHTML = `
+        <div class="slide">
+          <div class="cover-fullscreen">
+            <div>
+              <div class="cover-top-badge-row">
+                <div class="cambridge-badge" style="padding: 5px 12px;">
+                  <svg class="cambridge-shield" style="width:18px; height:18px;" viewBox="0 0 24 24">
+                    <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm0 2.18l6 2.25v4.66c0 4.14-2.73 8.02-6 9.11-3.27-1.09-6-4.97-6-9.11V6.43l6-2.25z"/>
+                  </svg>
+                  <span class="cambridge-name" style="font-size:15px;">Cambridge English</span>
+                  <span class="cambridge-level" style="font-size:10px; margin-top:-6px;">B2</span>
+                </div>
+
+                <div class="company-logo-slot" style="height:48px; max-width:160px;">
+                  <img src="https://lh3.googleusercontent.com/d/1EksYLoHp7voak-Ka3Y3txyiGM15DMPTP" alt="JM ELT Solutions" onerror="this.style.display='none'">
+                </div>
+              </div>
+
+              <div class="cover-headings-group">
+                <div class="main-section-title">CAMBRIDGE EXAMINATION • B2 FIRST (FCE)</div>
+                <div class="main-task-title">"SPEAKING MASTERY SUITE"</div>
+              </div>
+
+              <div class="welcome-text-block">
+                <p class="welcome-en">
+                  Welcome to the official full-length Speaking training suite for Cambridge B2 First. Complete each sequential Mock Exam across all 4 canonical parts (Part 1 Interview, Part 2 Long Turn comparative photographs, Part 3 Collaborative Spidergram, and Part 4 Discussion) to unlock the next test in the series. Experience authentic exam timing with real-time turn countdowns, interactive examiner voice prompts, high-scoring C1 oral scaffolding toolkits, and official Cambridge diagnostic evaluation.
+                </p>
+              </div>
+            </div>
+
+            <div class="cover-bottom-row">
+              <div class="signature-container">
+                <div class="signature-name-wrapper">
+                  <span class="signature-name">by Dr. Jesús Miguel Lima E.</span>
+                </div>
+                <div class="signature-roles">
+                  <span class="role-highlight">CEO of JM ELT Solutions</span>
+                  <span>Celta & Delta Trainer</span>
+                  <span>Exam Trainer</span>
+                  <span>Teacher Trainer</span>
+                  <span>University Professor</span>
+                </div>
+              </div>
+
+              <div class="cover-action-wrapper">
+                <button class="btn-launch-large" onclick="setScreen(2)">
+                  <span>🎙️</span> Open Speaking Roadmap ➔
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      `;
+    }
+
+    function renderCurriculum(mount) {
+      const mockDescriptions = {
+        1: "Part 1: Daily Life & Hobbies • Part 2: Working Environments • Part 3: City Tourism Options (Spidergram) • Part 4: Travel & Modern Leisure.",
+        2: "Part 1: Travel & Holidays • Part 2: Sports & Keeping Fit • Part 3: Improving School Facilities • Part 4: Physical Health & Education.",
+        3: "Part 1: Work & Career Ambitions • Part 2: Special Celebrations & Milestones • Part 3: Encouraging Youth Reading • Part 4: Literature & Digital Media.",
+        4: "Part 1: Family & Social Circles • Part 2: Performing Arts & Music • Part 3: Reducing Plastic Waste in Towns • Part 4: Environmental Responsibility.",
+        5: "Part 1: Technology in Routine • Part 2: Shopping Habits (Online vs Mall) • Part 3: Choosing a Gap Year Project • Part 4: Global Mobility & Independence.",
+        6: "Part 1: Hometown & Neighbourhood • Part 2: Learning Modes (Classroom vs Outdoor) • Part 3: Attracting Visitors to a Museum • Part 4: Heritage & Culture.",
+        7: "Part 1: Entertainment & Cinema • Part 2: Outdoor Activities & Adventure • Part 3: Organizing a Community Festival • Part 4: Local Traditions & Community.",
+        8: "Part 1: Food & Dining Habits • Part 2: People Helping Others & Altruism • Part 3: Promoting Healthy Eating at School • Part 4: Nutrition & Lifestyle.",
+        9: "Part 1: Languages & Communication • Part 2: Transportation & Commuting • Part 3: Tackling Urban Traffic Congestion • Part 4: Public Transport Policy.",
+        10: "Part 1: Weekends & Relaxation • Part 2: Solo vs Group Activities • Part 3: Designing a University Common Room • Part 4: Work-Life Balance & Rest.",
+        11: "Part 1: Weather & Seasonal Plans • Part 2: Extreme Sports & Personal Risk • Part 3: Promoting Wildlife Preservation • Part 4: Nature Conservation.",
+        12: "Part 1: Books, News & Information • Part 2: Solitary Concentration vs Teamwork • Part 3: Welcoming Exchange Students • Part 4: Intercultural Adaptation.",
+        13: "Part 1: Shopping & Consumer Habits • Part 2: Preparing Meals (Home vs Dining Out) • Part 3: Launching a Recycling Initiative • Part 4: Consumerism.",
+        14: "Part 1: Music & Live Performances • Part 2: Historic Sites vs Futuristic Cities • Part 3: Youth Club Activity Offerings • Part 4: Urban Architecture.",
+        15: "Part 1: Friends & Staying in Touch • Part 2: Public Speaking vs Written Notes • Part 3: Upgrading Public Parks & Green Spaces • Part 4: Public Spaces.",
+        16: "Part 1: Education & Favourite Subjects • Part 2: Traditional Jobs vs Tech Roles • Part 3: Encouraging Public Cycling • Part 4: Future Workplace Skills.",
+        17: "Part 1: Modern Media & Podcasts • Part 2: Rural Landscapes vs Bustling Metros • Part 3: Organizing a Charity Fundraiser • Part 4: Civic Engagement.",
+        18: "Part 1: Personal Ambitions • Part 2: Physical Games vs Video Gaming • Part 3: Preparing Teens for the Workplace • Part 4: Soft Skills vs Degrees.",
+        19: "Part 1: Pets, Animals & Nature • Part 2: Traditional Crafting vs 3D Printing • Part 3: Improving Public Library Services • Part 4: Knowledge Access.",
+        20: "Part 1: Fitness & Exercise Habits • Part 2: Exploring New Cities vs Beach Retreats • Part 3: Promoting Mental Well-being • Part 4: Stress Management.",
+        21: "Part 1: Art, Design & Creativity • Part 2: Commuting by Bicycle vs Driving • Part 3: Organizing a Science Exhibition • Part 4: Innovation & Society.",
+        22: "Part 1: Celebrations & Cultural Festivals • Part 2: Cooking Classes vs Language Immersion • Part 3: Supporting Senior Citizens • Part 4: Ageing & Society.",
+        23: "Part 1: Studying Foreign Languages • Part 2: Reading Paperbacks vs E-Readers • Part 3: Encouraging Renewable Energy at Home • Part 4: Energy Habits.",
+        24: "Part 1: Free Time & Evening Routines • Part 2: Working from Home vs Corporate Office • Part 3: Developing a Sports Academy • Part 4: Physical Education.",
+        25: "Part 1: Clothes, Fashion & Personal Style • Part 2: Backpacking vs Guided Group Tours • Part 3: Organizing an Art Festival • Part 4: Cultural Identity.",
+        26: "Part 1: Science, Tech & Gadgets • Part 2: Volunteering with Animals vs Hospital Care • Part 3: Reducing Food Waste in Schools • Part 4: Sustainability.",
+        27: "Part 1: Holidays & Exploring Nature • Part 2: Live Theatre vs Cinema Screenings • Part 3: Promoting Local Artisans & Markets • Part 4: Cultural Heritage.",
+        28: "Part 1: Future Career Ambitions • Part 2: Studying Alone vs Study Groups • Part 3: Creating an Environmental Youth Club • Part 4: Leadership & Teamwork.",
+        29: "Part 1: Television & Series Streaming • Part 2: Exploring Historic Ruins vs Modern Art • Part 3: Launching a Healthy Breakfast Campaign • Part 4: Daily Habits.",
+        30: "Part 1: Personal Memories & Milestones • Part 2: High-Adrenaline Sports vs Relaxing Crafts • Part 3: Choosing a Town Landmark Project • Part 4: Civic Pride."
+      };
+
+      const mocksConfig = [];
+      for (let i = 1; i <= 30; i++) {
+        const idStr = String(i).padStart(2, '0');
+        mocksConfig.push({
+          id: i,
+          idStr: idStr,
+          key: `speaking_mock_${idStr}_complete`,
+          title: `Speaking Mock Exam ${idStr}`,
+          desc: mockDescriptions[i] || `Full Examination: Parts 1, 2, 3 & 4 with live interactive timer and Cambridge scoring.`,
+          maxScore: 30
+        });
+      }
+
+      let completedMocksCount = 0;
+      let totalEarnedScore = 0;
+      const totalPossibleScore = mocksConfig.length * 30;
+
+      mocksConfig.forEach(m => {
+        const scoreData = session.speakingScores && session.speakingScores[m.key];
+        if (scoreData && scoreData.completed) {
+          completedMocksCount++;
+          totalEarnedScore += (scoreData.total || 0);
+        }
+      });
+
+      const pct = Math.round((completedMocksCount / mocksConfig.length) * 100);
+
+      const mocksHtml = mocksConfig.map(m => {
+        const scoreData = session.speakingScores && session.speakingScores[m.key];
+        const isCompleted = scoreData && scoreData.completed;
+        const isUnlocked = session.unlockedMocks && (session.unlockedMocks.includes(m.key) || m.id === 1);
+
+        let stateClass = "locked";
+        let scoreBadge = "";
+        let actionsHtml = `<div style="font-family:'JetBrains Mono'; font-size:12px; font-weight:700; color:var(--text-muted);">🔒 LOCKED</div>`;
+
+        if (isCompleted) {
+          stateClass = "unlocked completed";
+          scoreBadge = `<div class="block-score-badge">✓ Score: ${scoreData.total}/${m.maxScore} marks</div>`;
+          actionsHtml = `
+            <div class="block-actions-group">
+              <button class="btn-block-launch review" onclick="openCandidateSetup('${m.idStr}', '${m.title}')">
+                <span>↺</span> Review Mock
+              </button>
+            </div>
+          `;
+        } else if (isUnlocked) {
+          stateClass = "unlocked current";
+          scoreBadge = `<div class="block-score-badge" style="color:var(--accent-blue-light); border-color:rgba(96,165,250,0.3); background:rgba(37,99,235,0.1);">⏳ Available (${m.maxScore} marks)</div>`;
+          actionsHtml = `
+            <div class="block-actions-group">
+              <button class="btn-block-launch" onclick="openCandidateSetup('${m.idStr}', '${m.title}')">
+                <span>▶</span> Start Mock Exam
+              </button>
+            </div>
+          `;
+        }
+
+        return `
+          <div class="block-row ${stateClass}">
+            <div class="block-info">
+              <h4>${m.title}</h4>
+              <span>${m.desc}</span>
+              ${scoreBadge}
+            </div>
+            <div>${actionsHtml}</div>
+          </div>
+        `;
+      }).join('');
+
+      mount.innerHTML = `
+        <div class="slide">
+          <div class="center-stage">
+            <div class="center-tag"><span>🎙️</span> COMPLETE SPEAKING ROADMAP</div>
+            <h2 class="center-title">CAMBRIDGE B2 FIRST • SPEAKING MOCKS 01–30</h2>
+            <div style="max-width: 780px; margin-bottom: 8px;">
+              <p style="font-size:15px; color:#e2e8f0; line-height:1.5;">
+                Overall Suite Score: <strong style="color:var(--accent-gold);">${totalEarnedScore} / ${totalPossibleScore} Marks</strong> (${completedMocksCount} of ${mocksConfig.length} Mocks Finished • ${pct}% Completed). Complete each Speaking Mock to unlock the subsequent test.
+              </p>
+            </div>
+
+            <div class="progress-summary-card">
+              ${mocksHtml}
+            </div>
+          </div>
+
+          <div class="bottom-bar">
+            <button class="btn-act btn-outline" onclick="setScreen(1)">
+              <span>⬅</span> Back to Cover
+            </button>
+            <div style="font-family:'JetBrains Mono'; font-size:12px; color:var(--text-muted);">
+              Official Cambridge B2 First Speaking: Parts 1 to 4 • 30 Total Marks • Timed Interaction
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    initData();
+    render();
+  </script>
+</body>
+</html>

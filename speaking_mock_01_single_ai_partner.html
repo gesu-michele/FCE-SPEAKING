@@ -1,0 +1,2809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambridge B2 First • Speaking Mock 01 (Solo AI Partner Edition) | JM ELT Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-canvas-blue: #0f172a;
+      --surface-white: #ffffff;
+      --surface-card: #f8fafc;
+      --cambridge-navy: #091e3a;
+      --cambridge-blue: #1d4ed8;
+      --cambridge-blue-vivid: #2563eb;
+      --cambridge-emerald: #059669;
+      --cambridge-purple: #7c3aed;
+      --cambridge-gold: #f59e0b;
+      --text-pure-black: #000000;
+      --text-dark: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      --border-subtle: #cbd5e1;
+      --border-strong: #94a3b8;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-full: 9999px;
+      --shadow-card: 0 16px 36px -6px rgba(0, 0, 0, 0.28);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+    body {
+      background-color: var(--bg-canvas-blue);
+      background-image: 
+        linear-gradient(rgba(10, 25, 55, 0.78), rgba(6, 18, 42, 0.85)),
+        url('https://www.thehumphreygroup.com/hubfs/6%20Steps%20to%20Speaking%20as%20an%20Authentic%20Leader%20(1).png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 400;
+      color: var(--text-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+    }
+
+    header.exam-header {
+      background: rgba(6, 21, 45, 0.95);
+      backdrop-filter: blur(14px);
+      border-bottom: 3.5px solid #2563eb;
+      padding: 12px 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+    }
+
+    .brand-left-cluster { display: flex; align-items: center; gap: 22px; }
+
+    .cambridge-badge-frame {
+      background: #ffffff;
+      padding: 8px 18px;
+      border-radius: 12px;
+      border: 2px solid #cbd5e1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+
+    .cambridge-crest-img { height: 48px; width: auto; object-fit: contain; }
+
+    .jm-brand-box {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding-left: 20px;
+      border-left: 2.5px solid #3b82f6;
+    }
+
+    .jm-logo-img { height: 68px; width: auto; object-fit: contain; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.4)); }
+
+    .jm-titles { display: flex; flex-direction: column; align-items: center; text-align: center; line-height: 1.15; }
+    .jm-title-top { font-family: 'Outfit', sans-serif; font-size: 28px; font-weight: 900; color: #ffffff; letter-spacing: 1.5px; }
+    .jm-title-sub { font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 800; color: #f59e0b; letter-spacing: 1.2px; text-transform: uppercase; white-space: nowrap; }
+
+    .header-right-cluster { display: flex; align-items: center; gap: 16px; }
+
+    .btn-return-menu {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1.5px solid #60a5fa;
+      color: #ffffff;
+      font-family: 'Outfit', sans-serif;
+      font-size: 13.5px;
+      font-weight: 800;
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+    .btn-return-menu:hover { background: #2563eb; border-color: #bfdbfe; transform: translateY(-1px); }
+
+    .trainer-profile-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(15, 34, 64, 0.7);
+      border: 2px solid #3b82f6;
+      padding: 6px 18px 6px 12px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .trainer-avatar-lg {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: 3px solid #f59e0b;
+      object-fit: cover;
+      box-shadow: 0 0 16px rgba(245, 158, 11, 0.6);
+    }
+
+    .trainer-meta { text-align: right; }
+    .trainer-name-top { font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 800; color: #ffffff; line-height: 1.2; }
+    .trainer-desc-sub { font-size: 11.5px; font-weight: 700; color: #38bdf8; letter-spacing: 0.5px; }
+
+    main.speaking-viewport {
+      flex: 1;
+      max-width: 1520px;
+      width: 95%;
+      margin: 24px auto 30px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .card-white-surface {
+      background: var(--surface-white);
+      border: 2.5px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .exam-main-title-block {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      border-bottom: 2.5px solid #0f172a;
+      padding-bottom: 16px;
+    }
+
+    .exam-paper-heading-center {
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      color: #0b1a30;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .exam-trio-nav-bar {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .trio-left-part {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 900;
+      color: #1d4ed8;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .trio-center-candidate {
+      background: linear-gradient(135deg, #091e3a 0%, #1e3a8a 100%);
+      color: #ffffff;
+      border: 2.5px solid #60a5fa;
+      padding: 8px 28px;
+      border-radius: var(--radius-full);
+      font-family: 'Outfit', sans-serif;
+      font-size: 19px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.28);
+      white-space: nowrap;
+    }
+
+    .trio-right-theme {
+      text-align: right;
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      color: #475569;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .examiner-photo-full-box {
+      width: 100%;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 2px solid var(--border-subtle);
+      background: #000000;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .examiner-photo-full-box img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    .examiner-speech-box {
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-left: 8px solid #2563eb;
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .speech-speaker-label {
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 900;
+      color: #1e3a8a;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .speech-text-prompt {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.5;
+    }
+
+    .active-candidate-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #eff6ff;
+      border: 2.5px solid #93c5fd;
+      border-radius: var(--radius-md);
+      padding: 18px 26px;
+    }
+
+    .turn-candidate-info strong {
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
+      color: #1d4ed8;
+      display: block;
+    }
+    .turn-candidate-info span { font-size: 15px; color: #475569; font-weight: 700; }
+
+    .interlocutor-speaking-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      color: #1e3a8a;
+      background: #e2e8f0;
+      border: 2px dashed #94a3b8;
+      padding: 10px 24px;
+      border-radius: var(--radius-md);
+    }
+
+    .turn-countdown-badge {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 34px;
+      font-weight: 900;
+      color: #1e3a8a;
+      background: #ffffff;
+      padding: 8px 24px;
+      border-radius: var(--radius-md);
+      border: 2.5px solid #3b82f6;
+    }
+
+    .turn-countdown-badge.speaking-state {
+      display: inline-flex;
+      color: #047857;
+      border-color: #10b981;
+      background: #ecfdf5;
+      box-shadow: 0 0 18px rgba(16, 185, 129, 0.4);
+    }
+
+    .turn-countdown-badge.ai-speaking-state {
+      display: inline-flex;
+      color: #7c3aed;
+      border-color: #a855f7;
+      background: #faf5ff;
+      box-shadow: 0 0 18px rgba(168, 85, 247, 0.4);
+    }
+
+    .turn-countdown-badge.prep-state {
+      display: inline-flex;
+      color: #b45309;
+      border-color: #f59e0b;
+      background: #fffbeb;
+      box-shadow: 0 0 18px rgba(245, 158, 11, 0.4);
+    }
+
+    .turn-countdown-badge.alert-pulse {
+      color: #dc2626;
+      border-color: #dc2626;
+      background: #fee2e2;
+      animation: alertBlink 1s infinite alternate;
+    }
+    @keyframes alertBlink { 0% { opacity: 1; } 100% { opacity: 0.55; } }
+
+    .pacer-hud-bar {
+      display: none;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 20px;
+      background: #f8fafc;
+      border: 2.5px solid #cbd5e1;
+      border-radius: var(--radius-md);
+      padding: 16px 24px;
+      margin-top: 6px;
+    }
+
+    .pacer-card {
+      padding: 14px 20px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 2px solid #e2e8f0;
+      background: #ffffff;
+      opacity: 0.45;
+      transition: all 0.3s ease;
+    }
+
+    .pacer-card.active-ai {
+      opacity: 1;
+      border-color: #a855f7;
+      background: #faf5ff;
+      box-shadow: 0 0 18px rgba(168, 85, 247, 0.4);
+    }
+
+    .pacer-card.active-user {
+      opacity: 1;
+      border-color: #10b981;
+      background: #ecfdf5;
+      box-shadow: 0 0 18px rgba(16, 185, 129, 0.4);
+    }
+
+    .pacer-name { font-family: 'Outfit', sans-serif; font-size: 17px; font-weight: 900; }
+    .pacer-clock { font-family: 'JetBrains Mono', monospace; font-size: 24px; font-weight: 900; }
+
+    .pacer-macro-box {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+    }
+
+    .pacer-macro-label {
+      font-size: 12px;
+      font-weight: 800;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .pacer-macro-clock {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 28px;
+      font-weight: 900;
+      color: #0f172a;
+    }
+
+    .p2-lead-question-banner {
+      background: #fffdf5;
+      border: 3.5px solid #0f172a;
+      border-radius: var(--radius-md);
+      padding: 22px 30px;
+      text-align: center;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.15);
+      margin-bottom: 6px;
+    }
+
+    .p2-lead-question-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: 0.3px;
+      line-height: 1.35;
+    }
+
+    .photos-comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 860px) {
+      .photos-comparison-grid { grid-template-columns: 1fr; }
+      .pacer-hud-bar { grid-template-columns: 1fr; }
+    }
+
+    .photo-card-box {
+      border: 6px solid #ffffff;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: #0f172a;
+      height: 400px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+      position: relative;
+    }
+
+    .photo-card-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .central-action-glow-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      padding: 4px 0;
+    }
+
+    @keyframes pulseGlowButton {
+      0% { box-shadow: 0 0 16px rgba(217, 119, 6, 0.4), 0 0 0 0 rgba(245, 158, 11, 0.7); transform: scale(1); }
+      50% { box-shadow: 0 0 32px rgba(245, 158, 11, 0.85), 0 0 16px rgba(217, 119, 6, 0.8); transform: scale(1.025); }
+      100% { box-shadow: 0 0 16px rgba(217, 119, 6, 0.4), 0 0 0 0 rgba(245, 158, 11, 0.7); transform: scale(1); }
+    }
+
+    .btn-central-pause-glow {
+      background: linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #b45309 100%);
+      color: #ffffff;
+      border: 2.5px solid #fef3c7;
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+      padding: 15px 48px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      animation: pulseGlowButton 2s infinite ease-in-out;
+      transition: all 0.2s;
+    }
+    .btn-central-pause-glow:hover { transform: scale(1.05); }
+
+    .btn-central-sec {
+      background: #ffffff;
+      color: #1e3a8a;
+      border: 2px solid #3b82f6;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      padding: 13px 26px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+    .btn-central-sec:hover { background: #eff6ff; }
+
+    .spiderweb-canvas-container {
+      position: relative;
+      width: 100%;
+      max-width: 1020px;
+      height: 640px;
+      margin: 10px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .spiderweb-svg-lines {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .spiderweb-center {
+      position: relative;
+      z-index: 2;
+      background: #0f172a;
+      color: #ffffff;
+      border: 4.5px solid #f59e0b;
+      border-radius: 24px;
+      padding: 32px 40px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 28px;
+      font-weight: 900;
+      text-align: center;
+      max-width: 500px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5);
+      line-height: 1.35;
+    }
+
+    .spiderweb-bubble {
+      position: absolute;
+      z-index: 2;
+      background: #ffffff;
+      border: 3.5px solid #0f172a;
+      border-radius: 50%;
+      width: 185px;
+      height: 185px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 900;
+      color: #0f172a;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+      padding: 16px;
+      line-height: 1.25;
+      gap: 6px;
+    }
+
+    .spiderweb-bubble span.emoji-icon { font-size: 34px; display: block; }
+    .spider-pos-1 { top: 15px; left: 30px; }
+    .spider-pos-2 { top: 15px; right: 30px; }
+    .spider-pos-3 { bottom: 25px; left: 30px; }
+    .spider-pos-4 { bottom: 25px; right: 30px; }
+    .spider-pos-5 { bottom: 5px; left: calc(50% - 92px); }
+
+    .full-width-scaffolding-suite {
+      background: var(--surface-white);
+      border: 2.5px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .suite-nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(135deg, #091e3a 0%, #172554 100%);
+      padding: 16px 32px;
+      border-bottom: 2.5px solid #1e3a8a;
+    }
+
+    .suite-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .toolkit-super-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 28px; }
+    @media (max-width: 1024px) { .toolkit-super-grid { grid-template-columns: 1fr; } }
+
+    .toolkit-card {
+      border-radius: var(--radius-md);
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+    }
+
+    .toolkit-card-purple { background: #faf5ff; border: 2px solid #e9d5ff; }
+    .toolkit-card-purple h4 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      color: #581c87;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #d8b4fe;
+    }
+
+    .toolkit-card-emerald { background: #f0fdf4; border: 2px solid #bbf7d0; }
+    .toolkit-card-emerald h4 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      color: #065f46;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #86efac;
+    }
+
+    .toolkit-card-amber { background: #fffbeb; border: 2px solid #fde68a; }
+    .toolkit-card-amber h4 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      color: #78350f;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #fcd34d;
+    }
+
+    .stacked-lexicon-list { display: flex; flex-direction: column; gap: 12px; }
+    .stacked-lexicon-item {
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      background: #ffffff;
+      border: 1.5px solid #e2e8f0;
+      transition: all 0.2s ease;
+    }
+    .item-en { font-size: 15.5px; font-weight: 900; line-height: 1.4; color: #0f172a; }
+    .item-es { font-size: 13px; font-weight: 500; color: #475569; font-style: italic; }
+
+    .controls-bar {
+      max-width: 1520px;
+      width: 95%;
+      margin: 0 auto 30px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      border: 2.5px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 22px 36px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .btn-act {
+      font-family: 'Outfit', sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      padding: 14px 32px;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      border: 2px solid transparent;
+      transition: all 0.25s ease;
+    }
+    .btn-prev { background: #f1f5f9; border-color: #cbd5e1; color: #1e293b; }
+    .btn-prev:hover { background: #e2e8f0; }
+
+    .btn-submit-glow {
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #3b82f6 100%);
+      color: #ffffff;
+      border: 2.5px solid #bfdbfe;
+      font-family: 'Outfit', sans-serif;
+      font-size: 19px;
+      font-weight: 900;
+      padding: 15px 44px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: 0 0 24px rgba(37, 99, 235, 0.6);
+      transition: all 0.2s ease;
+    }
+    .btn-submit-glow:hover { transform: scale(1.03); box-shadow: 0 0 32px rgba(37, 99, 235, 0.9); }
+
+    .modal-start-veil {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.94);
+      backdrop-filter: blur(14px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 24px;
+    }
+    .modal-start-card {
+      background: #ffffff;
+      border: 3.5px solid #2563eb;
+      border-radius: 24px;
+      max-width: 620px;
+      width: 100%;
+      padding: 44px 36px;
+      text-align: center;
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.85);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .modal-transition-veil {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.95);
+      backdrop-filter: blur(16px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      padding: 24px;
+    }
+    .modal-transition-card {
+      background: #0f172a;
+      border: 3px solid #f59e0b;
+      border-radius: 26px;
+      max-width: 580px;
+      width: 100%;
+      padding: 46px 36px;
+      text-align: center;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.85);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      color: #ffffff;
+    }
+
+    .circular-countdown {
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      border: 5px solid #38bdf8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 42px;
+      font-weight: 900;
+      color: #38bdf8;
+      margin: 10px 0;
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
+      animation: pulseCircle 1s infinite alternate;
+    }
+    @keyframes pulseCircle { 0% { transform: scale(1); } 100% { transform: scale(1.08); } }
+
+    .modal-completion-veil {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.96);
+      backdrop-filter: blur(16px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1050;
+      padding: 24px;
+      overflow-y: auto;
+    }
+    .modal-completion-card {
+      background: #ffffff;
+      border: 3.5px solid #10b981;
+      border-radius: 28px;
+      max-width: 780px;
+      width: 100%;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    footer.exam-footer {
+      background: rgba(6, 21, 45, 0.98);
+      border-top: 2.5px solid #1e3a8a;
+      padding: 20px 48px;
+      display: grid;
+      grid-template-columns: 1fr 1.6fr 1fr;
+      align-items: center;
+      font-size: 15px;
+      color: #cbd5e1;
+      margin-top: auto;
+    }
+    .footer-left {
+      text-align: left;
+      font-family: 'Outfit', sans-serif;
+      font-size: 15.5px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+    .footer-center {
+      text-align: center;
+      font-size: 14.5px;
+      font-weight: 700;
+      color: #e2e8f0;
+    }
+    .footer-center-highlight {
+      color: #f59e0b;
+      font-weight: 900;
+    }
+    .footer-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 14px;
+    }
+    .footer-cambridge-badge {
+      background: #ffffff;
+      padding: 3px 10px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .footer-cambridge-badge img {
+      height: 22px;
+      width: auto;
+      object-fit: contain;
+    }
+    .footer-brand-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 16.5px;
+      font-weight: 900;
+      color: #38bdf8;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MODAL DE INICIO -->
+  <div class="modal-start-veil" id="modalStartSimulator">
+    <div class="modal-start-card">
+      <div style="font-size:50px; line-height:1;">🎙️</div>
+      <h2 style="font-family:'Outfit'; font-size:32px; font-weight:900; color:#0b1a30;">B2 First Speaking</h2>
+      <p style="font-size:18px; color:#475569; font-weight:700;">
+        Solo Edition with AI Partner (Candidate A)
+      </p>
+      <div style="font-family:'Outfit'; font-size:38px; font-weight:900; color:#1d4ed8; margin: 6px 0;">
+        Mock 01
+      </div>
+      <p style="font-size:15px; color:#64748b; font-weight:600; line-height:1.5;">
+        Your AI Partner (Emily) will lead the conversation and model full C1-level answers. You will take the role of Candidate B.
+      </p>
+      <button type="button" class="btn-submit-glow" style="margin-top:6px; font-size:20px; padding:15px 48px;" onclick="startInitialExamSession()">
+        Start Official Simulation ➔
+      </button>
+    </div>
+  </div>
+
+  <!-- OVERLAY DE TRANSICIÓN 3-2-1 DINÁMICO -->
+  <div class="modal-transition-veil" id="modalPartTransition">
+    <div class="modal-transition-card">
+      <div style="font-size:46px;">🚀</div>
+      <h2 style="font-family:'Outfit'; font-size:34px; font-weight:900; color:#f59e0b;" id="transTitle">Part Two</h2>
+      <p style="font-size:17px; color:#cbd5e1; font-weight:600;">
+        Get ready. The examiner will introduce your task in:
+      </p>
+      <div class="circular-countdown" id="transCount">3</div>
+    </div>
+  </div>
+
+  <!-- MODAL DE FINALIZACIÓN OFICIAL -->
+  <div class="modal-completion-veil" id="modalCompletion">
+    <div class="modal-completion-card">
+      <div style="font-size:54px;">🏆</div>
+      <h2 style="font-family:'Outfit'; font-size:34px; font-weight:900; color:#0b1a30;">Speaking Mock 01 (Solo Edition) Completed!</h2>
+      <p style="font-size:17px; color:#475569; font-weight:600; line-height:1.5;">
+        You have successfully practiced turn-taking, timing control, and collaborative discussion alongside your virtual partner.
+      </p>
+
+      <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:16px; width:100%; text-align:left; background:#f8fafc; padding:20px; border-radius:16px; border:2px solid #e2e8f0;">
+        <div>
+          <strong style="color:#1e3a8a; display:block; font-size:16px; margin-bottom:4px;">🎯 Skills Trained:</strong>
+          <ul style="font-size:14.5px; color:#475569; padding-left:20px; line-height:1.6;">
+            <li>Rapid Response & Interruption Handling</li>
+            <li>Adhering to 15s Paced Turn-taking</li>
+          </ul>
+        </div>
+        <div>
+          <strong style="color:#1e3a8a; display:block; font-size:16px; margin-bottom:4px;">🗣️ AI Partner Model:</strong>
+          <ul style="font-size:14.5px; color:#475569; padding-left:20px; line-height:1.6;">
+            <li>C1-level Idiomatic Lexicon</li>
+            <li>Diplomatic Disagreement & Negotiation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:10px;">
+        <a href="./index.html" class="btn-act btn-prev" style="text-decoration:none; padding:14px 28px;">
+          🏠 Return to Roadmap
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header class="exam-header">
+    <div class="brand-left-cluster">
+      <div class="cambridge-badge-frame">
+        <img src="https://drive.google.com/thumbnail?id=1sd7nJwtvyEzuKaK5YTxKARFjM7dS8TGg&sz=w200" alt="Cambridge English" class="cambridge-crest-img">
+      </div>
+      <div class="jm-brand-box">
+        <img src="https://drive.google.com/thumbnail?id=1EksYLoHp7voak-Ka3Y3txyiGM15DMPTP&sz=w200" alt="JM ELT Solutions" class="jm-logo-img">
+        <div class="jm-titles">
+          <span class="jm-title-top">JM</span>
+          <span class="jm-title-sub">ELT Solutions</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-right-cluster">
+      <a href="./index.html" class="btn-return-menu"><span>🏠</span> Return to Roadmap</a>
+      <div class="trainer-profile-card">
+        <div class="trainer-meta">
+          <div class="trainer-name-top">Dr. Jesús Miguel Lima E.</div>
+          <div class="trainer-desc-sub">Cambridge Specialist & Trainer</div>
+        </div>
+        <img src="https://drive.google.com/thumbnail?id=1yd8aHZpgwj1mJXKaP8zldJIZAwGTiIor&sz=w200" alt="Dr. Jesús Miguel Lima E." class="trainer-avatar-lg">
+      </div>
+    </div>
+  </header>
+
+  <main class="speaking-viewport">
+
+    <div class="card-white-surface">
+      <div class="exam-main-title-block">
+        <div class="exam-paper-heading-center">
+          <span>🎙️ B2 FIRST SPEAKING (SOLO AI PARTNER)</span>
+        </div>
+        <div class="exam-trio-nav-bar">
+          <div class="trio-left-part" id="trioPartLabel">PART 1</div>
+          <div class="trio-center-candidate" id="trioCandidateLabel">CANDIDATE A (AI)</div>
+          <div class="trio-right-theme" id="trioThemeLabel">IDENTIFICATION</div>
+        </div>
+      </div>
+
+      <div class="examiner-photo-full-box">
+        <img id="mainExaminerPhoto" src="https://drive.google.com/thumbnail?id=1bjiBNc5-2HX5CWocFBi6v-Wg6EyBdbmz&sz=w1600" alt="Examiners">
+      </div>
+
+      <div id="p2LeadQuestionBlock" style="display:none;" class="p2-lead-question-banner">
+        <h3 class="p2-lead-question-title" id="p2LeadQuestionText"></h3>
+      </div>
+
+      <div id="dynamicVisualSlot" style="display:none;"></div>
+
+      <div class="examiner-speech-box">
+        <div class="speech-speaker-label">
+          <span id="speakerLabelText">🗣️ Interlocutor:</span>
+        </div>
+        <div class="speech-text-prompt" id="speechTextDisplay">Loading test...</div>
+      </div>
+
+      <div class="active-candidate-indicator">
+        <div class="turn-candidate-info">
+          <strong id="activeCandidateTitle">Candidate A (AI Partner)</strong>
+          <span id="activeCandidateInstruction">Listen to the interlocutor.</span>
+        </div>
+
+        <div class="interlocutor-speaking-pill" id="interlocutorSpeakingPill">
+          <span>🔊</span> <span id="speakingPillText">Interlocutor is speaking...</span>
+        </div>
+
+        <div class="turn-countdown-badge" id="subTurnBadge">
+          <span>⏱️</span> <span id="badgeTimerText">00:08</span>
+        </div>
+      </div>
+
+      <!-- PACER HUD: CANDIDATO A IZQUIERDA | MACRO RELOJ AL CENTRO | CANDIDATO B DERECHA -->
+      <div class="pacer-hud-bar" id="pacerHudBar">
+        <div class="pacer-card" id="pacerCardAi">
+          <div>
+            <span class="pacer-name" style="color:#7c3aed;">🤖 Candidate A (AI Partner)</span>
+            <span style="display:block; font-size:12px; font-weight:700; color:#64748b;" id="pacerAiAction">Leading & Prompting</span>
+          </div>
+          <div class="pacer-clock" id="pacerClockAi" style="color:#7c3aed;">15s</div>
+        </div>
+
+        <div class="pacer-macro-box">
+          <span class="pacer-macro-label">Total Time</span>
+          <span class="pacer-macro-clock" id="pacerMacroClock">02:00</span>
+        </div>
+
+        <div class="pacer-card" id="pacerCardUser">
+          <div>
+            <span class="pacer-name" style="color:#059669;">👤 Candidate B (You)</span>
+            <span style="display:block; font-size:12px; font-weight:700; color:#64748b;" id="pacerUserAction">Reacting & Connecting</span>
+          </div>
+          <div class="pacer-clock" id="pacerClockUser" style="color:#059669;">15s</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="central-action-glow-bar">
+      <button type="button" class="btn-central-pause-glow" id="btnCentralPause" onclick="togglePauseSimulation()">
+        <span id="btnPauseIcon">⏸</span> <span id="btnPauseText">Pause Simulation</span>
+      </button>
+      <button type="button" class="btn-central-sec" onclick="addTurnSeconds(15)">
+        <span>⏳</span> +15 Seconds
+      </button>
+    </div>
+
+    <div class="full-width-scaffolding-suite">
+      <div class="suite-nav-bar">
+        <div class="suite-title">
+          <span>👑 Pedagogical Scaffolding Suite</span>
+          <span style="font-size:13px; font-weight:700; color:#38bdf8; text-transform:uppercase;" id="scaffoldSubLabel">• Live Turn-Taking Language</span>
+        </div>
+      </div>
+      <div id="scaffoldingGridContainer"></div>
+    </div>
+
+  </main>
+
+  <div class="controls-bar">
+    <button type="button" class="btn-act btn-prev" id="btnPrevMaster" onclick="prevMasterPart()">
+      ← Previous Step
+    </button>
+    <div style="font-family:'JetBrains Mono'; font-size:14px; font-weight:800; color:#1e3a8a;" id="statusPartTrack">
+      Step: Part 1 • Introductory Question
+    </div>
+    <button type="button" class="btn-act btn-submit-glow" id="btnNextMaster" onclick="nextMasterStep()">
+      Next Step ➔
+    </button>
+  </div>
+
+  <footer class="exam-footer">
+    <div class="footer-left">
+      © 2026 Cambridge Assessment Practice Engine[cite: 13, 14]
+    </div>
+    <div class="footer-center">
+      All Rights Reserved • Authored & Developed by <span class="footer-center-highlight">Dr. Jesús Miguel Lima E.</span>[cite: 13, 14]
+    </div>
+    <div class="footer-right">
+      <div class="footer-cambridge-badge">
+        <img src="https://drive.google.com/thumbnail?id=1sd7nJwtvyEzuKaK5YTxKARFjM7dS8TGg&sz=w100" alt="Cambridge English">
+      </div>
+      <span class="footer-brand-title">JM ELT Solutions</span>[cite: 14]
+    </div>
+  </footer>
+
+  <script>
+    let currentStepIndex = 0;
+    let lastRenderedPart = 1;
+    let turnSeconds = 8;
+    let turnTimerRunning = false;
+    let turnTimerInterval = null;
+
+    let isExaminerSpeaking = false;
+    let isAiPartnerSpeaking = false;
+    let isPausedByUser = false;
+
+    let speechGuardTimeout = null;
+    let activeIntervals = [];
+
+    function trackInterval(iv) {
+      activeIntervals.push(iv);
+      return iv;
+    }
+
+    function clearAllTimers() {
+      clearInterval(turnTimerInterval);
+      activeIntervals.forEach(iv => clearInterval(iv));
+      activeIntervals = [];
+      if (speechGuardTimeout) clearTimeout(speechGuardTimeout);
+      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      isExaminerSpeaking = false;
+      isAiPartnerSpeaking = false;
+    }
+
+    let audioCtx = null;
+    function getAudioContext() {
+      try {
+        if (!audioCtx) {
+          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+          if (AudioContextClass) {
+            audioCtx = new AudioContextClass();
+          }
+        }
+        if (audioCtx && audioCtx.state === 'suspended') {
+          audioCtx.resume().catch(() => {});
+        }
+      } catch (e) {}
+      return audioCtx;
+    }
+    
+    function playStartBell() {
+      try {
+        const ctx = getAudioContext();
+        if (!ctx) return;
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.type = "sine";
+        osc.frequency.setValueAtTime(880, ctx.currentTime);
+        gain.gain.setValueAtTime(0.4, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.6);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.6);
+      } catch (e) {}
+    }
+
+    function playEndBell() {
+      try {
+        const ctx = getAudioContext();
+        if (!ctx) return;
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.type = "sine";
+        osc.frequency.setValueAtTime(440, ctx.currentTime);
+        gain.gain.setValueAtTime(0.4, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.8);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.8);
+      } catch (e) {}
+    }
+
+    function getStepsSequence() {
+      return [
+        // ===================== PART 1 =====================
+        // Protocolo de apertura
+        {
+          part: 1,
+          partLabel: "PART 1",
+          candidateLabel: "CANDIDATE A (AI)",
+          themeLabel: "IDENTIFICATION",
+          heading: "Part 1 • Opening: Name (Candidate A)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1bjiBNc5-2HX5CWocFBi6v-Wg6EyBdbmz&sz=w1600",
+          prompt: "Good morning. My name is Christopher Sterling and this is my colleague, Victoria Pemberton. And what is your name, Candidate A?",
+          activeCandidate: "Candidate A: Emily (AI Partner)",
+          instruction: "Listen to Emily state her name.",
+          duration: 8,
+          isAiTurn: true,
+          aiScript: "Good morning, Mr. Sterling. My name is Emily. It is an absolute pleasure to be here today.",
+          scaffoldData: {
+            col1Title: "🤖 AI Peer Model (C1)",
+            col1: [
+              { en: "Good morning, Mr. Sterling. My name is...", es: "Buenos días, Sr. Sterling. Mi nombre es..." },
+              { en: "It is an absolute pleasure to be here today.", es: "Es un absoluto placer estar aquí hoy." }
+            ],
+            col2Title: "🎯 Register & Etiquette",
+            col2: [
+              { en: "Notice the polite, confident greeting to the examiner.", es: "Nota el saludo cortés y seguro hacia el examinador." }
+            ],
+            col3Title: "⚡ Upcoming Turn (You)",
+            col3: [
+              { en: "Good morning, my name is...", es: "Buenos días, mi nombre es..." }
+            ]
+          }
+        },
+        {
+          part: 1,
+          partLabel: "PART 1",
+          candidateLabel: "CANDIDATE B (YOU)",
+          themeLabel: "IDENTIFICATION",
+          heading: "Part 1 • Opening: Name (Candidate B)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1bjiBNc5-2HX5CWocFBi6v-Wg6EyBdbmz&sz=w1600",
+          prompt: "And what is your name, Candidate B?",
+          activeCandidate: "Candidate B: You",
+          instruction: "State your name clearly (8 seconds).",
+          duration: 8,
+          isAiTurn: false,
+          scaffoldData: {
+            col1Title: "⏳ Direct Introductions",
+            col1: [
+              { en: "Good morning, my name is...", es: "Buenos días, mi nombre es..." },
+              { en: "Pleased to meet you, Mr. Sterling. I am...", es: "Mucho gusto en conocerle, Sr. Sterling. Yo soy..." },
+              { en: "Here is my examination mark sheet.", es: "Aquí está mi hoja de calificación." }
+            ],
+            col2Title: "🎯 Formal Formulations",
+            col2: [
+              { en: "Good morning to you both; my name is...", es: "Buenos días a ambos; mi nombre es..." },
+              { en: "I am delighted to be here today.", es: "Estoy encantado/a de estar aquí hoy." }
+            ],
+            col3Title: "⚡ Natural Etiquette",
+            col3: [
+              { en: "I am fully prepared to begin.", es: "Estoy totalmente preparado/a para comenzar." }
+            ]
+          }
+        },
+        {
+          part: 1,
+          partLabel: "PART 1",
+          candidateLabel: "CANDIDATE A (AI)",
+          themeLabel: "HOMETOWN & ORIGIN",
+          heading: "Part 1 • Opening: Origin (Candidate A)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1bjiBNc5-2HX5CWocFBi6v-Wg6EyBdbmz&sz=w1600",
+          prompt: "Where are you from, Candidate A?",
+          activeCandidate: "Candidate A: Emily (AI Partner)",
+          instruction: "Listen to Emily describe her hometown.",
+          duration: 8,
+          isAiTurn: true,
+          aiScript: "I was born and raised in Cambridge, a historic university city situated in the east of England.",
+          scaffoldData: {
+            col1Title: "🤖 AI Peer Model (C1)",
+            col1: [
+              { en: "I was born and raised in...", es: "Nací y crecí en..." },
+              { en: "A historic city situated in the east of...", es: "Una ciudad histórica situada en el este de..." }
+            ],
+            col2Title: "🎯 Geography",
+            col2: [
+              { en: "Using cardinal points gives precision to descriptions.", es: "Usar puntos cardinales da precisión a las descripciones." }
+            ],
+            col3Title: "⚡ Upcoming Turn (You)",
+            col3: [
+              { en: "I originally hail from...", es: "Soy originario/a de..." }
+            ]
+          }
+        },
+        {
+          part: 1,
+          partLabel: "PART 1",
+          candidateLabel: "CANDIDATE B (YOU)",
+          themeLabel: "HOMETOWN & ORIGIN",
+          heading: "Part 1 • Opening: Origin (Candidate B)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1bjiBNc5-2HX5CWocFBi6v-Wg6EyBdbmz&sz=w1600",
+          prompt: "And you, Candidate B? Where are you from?",
+          activeCandidate: "Candidate B: You",
+          instruction: "Answer stating your hometown and region (8 seconds).",
+          duration: 8,
+          isAiTurn: false,
+          scaffoldData: {
+            col1Title: "🧭 Geographical Starters",
+            col1: [
+              { en: "I hail from the southern highlands, specifically...", es: "Provengo de la sierra sur, específicamente de..." },
+              { en: "I currently reside in the historic city of...", es: "Actualmente resido en la histórica ciudad de..." }
+            ],
+            col2Title: "🎯 Concise Connectors",
+            col2: [
+              { en: "Which is situated at high altitude.", es: "La cual está situada a gran altitud." },
+              { en: "Surrounded by volcanic ridges and rich culture.", es: "Rodeada de crestas volcánicas y rica cultura." }
+            ],
+            col3Title: "⚡ Lexical Polish",
+            col3: [
+              { en: "A bustling metropolitan area renowned for its cuisine.", es: "Un área metropolitana vibrante famosa por su gastronomía." }
+            ]
+          }
+        },
+        {
+          part: 1,
+          partLabel: "PART 1",
+          candidateLabel: "CANDIDATE A (AI)",
+          themeLabel: "WORK OR STUDY",
+          heading: "Part 1 • Opening: Occupation (Candidate A)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1bjiBNc5-2HX5CWocFBi6v-Wg6EyBdbmz&sz=w1600",
+          prompt: "Candidate A, do you work or are you a student?",
+          activeCandidate: "Candidate A: Emily (AI Partner)",
+          instruction: "Listen to Emily explain her studies and career path.",
+          duration: 15,
+          isAiTurn: true,
+          aiScript: "I'm currently an undergraduate student majoring in Modern Languages, and I also work part-time as an online language tutor.",
+          scaffoldData: {
+            col1Title: "🤖 AI Peer Model (C1)",
+            col1: [
+              { en: "I'm currently an undergraduate student majoring in...", es: "Actualmente soy estudiante de pregrado especializándome en..." },
+              { en: "I also work part-time as a...", es: "También trabajo a tiempo parcial como..." }
+            ],
+            col2Title: "🎯 Vocabulary Focus",
+            col2: [
+              { en: "State both your academic domain and professional goals.", es: "Menciona tanto tu área académica como metas laborales." }
+            ],
+            col3Title: "⚡ Upcoming Turn (You)",
+            col3: [
+              { en: "I work as a... / I am studying...", es: "Trabajo como... / Estoy estudiando..." }
+            ]
+          }
+        },
+        {
+          part: 1,
+          partLabel: "PART 1",
+          candidateLabel: "CANDIDATE B (YOU)",
+          themeLabel: "WORK OR STUDY",
+          heading: "Part 1 • Opening: Occupation (Candidate B)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1bjiBNc5-2HX5CWocFBi6v-Wg6EyBdbmz&sz=w1600",
+          prompt: "And what about you, Candidate B? Do you work or are you a student?",
+          activeCandidate: "Candidate B: You",
+          instruction: "State your occupation or studies and expand briefly (15 seconds).",
+          duration: 15,
+          isAiTurn: false,
+          scaffoldData: {
+            col1Title: "💼 Work & Study Starters",
+            col1: [
+              { en: "I am currently working as a professional...", es: "Actualmente me desempeño como profesional en..." },
+              { en: "I am balancing my career with specialized certification studies.", es: "Estoy equilibrando mi carrera con estudios de certificación especializada." }
+            ],
+            col2Title: "🎯 Expanding Reasons",
+            col2: [
+              { en: "Which involves managing educational programmes.", es: "Lo cual implica gestionar programas educativos." },
+              { en: "I find my daily responsibilities intellectually stimulating.", es: "Encuentro mis responsabilidades diarias intelectualmente estimulantes." }
+            ],
+            col3Title: "⚡ Professional Polish",
+            col3: [
+              { en: "Dedicated to continuous professional development.", es: "Dedicado/a al continuo desarrollo profesional." }
+            ]
+          }
+        },
+
+        // Round 1
+        {
+          part: 1,
+          partLabel: "PART 1",
+          candidateLabel: "CANDIDATE A (AI)",
+          themeLabel: "FAMILY TRAITS (ROUND 1)",
+          heading: "Part 1 • Round 1: Family Similarity (Candidate A)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1bjiBNc5-2HX5CWocFBi6v-Wg6EyBdbmz&sz=w1600",
+          prompt: "Candidate A, who are you most like in your family? In what ways are you similar?",
+          activeCandidate: "Candidate A: Emily (AI Partner)",
+          instruction: "Listen to Emily's C1 model with grammatical inversion.",
+          duration: 25,
+          isAiTurn: true,
+          aiScript: "Without a doubt, I bear the strongest resemblance to my mother. Not only do we share an identical sense of humor, but we are also both remarkably determined when pursuing personal goals.",
+          scaffoldData: {
+            col1Title: "🤖 AI Peer Model (C1)",
+            col1: [
+              { en: "Without a doubt, I bear the strongest resemblance to...", es: "Sin duda alguna, guardo el mayor parecido con..." },
+              { en: "Not only do we share... but we are also both...", es: "No solo compartimos... sino que ambas somos..." }
+            ],
+            col2Title: "🎯 Grammar: Inversion",
+            col2: [
+              { en: "Inversion ('Not only do we share...') guarantees highest marks.", es: "La inversión gramatical garantiza la puntuación más alta." }
+            ],
+            col3Title: "⚡ Upcoming Round 1 Turn (You)",
+            col3: [
+              { en: "Prepare to answer: Is there a sport or hobby you enjoy?", es: "Prepárate para responder: ¿Hay algún deporte o hobby que disfrutes?" }
+            ]
+          }
+        },
+        {
+          part: 1,
+          partLabel: "PART 1",
+          candidateLabel: "CANDIDATE B (YOU)",
+          themeLabel: "SPORTS & HOBBIES (ROUND 1)",
+          heading: "Part 1 • Round 1: Hobbies & Leisure (Candidate B)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1bjiBNc5-2HX5CWocFBi6v-Wg6EyBdbmz&sz=w1600",
+          prompt: "Candidate B, is there a sport or hobby you enjoy doing? Why do you like it?",
+          activeCandidate: "Candidate B: You",
+          instruction: "Answer directly and expand with reasons (30 seconds).",
+          duration: 30,
+          isAiTurn: false,
+          scaffoldData: {
+            col1Title: "⏳ Passion Starters",
+            col1: [
+              { en: "To be completely candid, I am an exceptionally keen enthusiast of...", es: "Para ser completamente sincero/a, soy un/a aficionado/a apasionado/a de..." },
+              { en: "Whenever my schedule permits, I immerse myself completely in...", es: "Siempre que mi horario lo permite, me sumerjo por completo en..." }
+            ],
+            col2Title: "🎯 Extension Connectors",
+            col2: [
+              { en: "Mainly because it serves as an indispensable outlet for stress.", es: "Principalmente porque sirve como un desahogo indispensable para el estrés." },
+              { en: "In addition to building stamina, it instils self-discipline.", es: "Además de desarrollar resistencia, inculca autodisciplina." }
+            ],
+            col3Title: "⚡ Lexical Polish",
+            col3: [
+              { en: "Blow off steam and recharge my batteries after demanding days.", es: "Descargar tensiones y recargar energías tras días exigentes." }
+            ]
+          }
+        },
+
+        // Round 2
+        {
+          part: 1,
+          partLabel: "PART 1",
+          candidateLabel: "CANDIDATE A (AI)",
+          themeLabel: "FUTURE TRAVEL (ROUND 2)",
+          heading: "Part 1 • Round 2: Future Travel (Candidate A)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1bjiBNc5-2HX5CWocFBi6v-Wg6EyBdbmz&sz=w1600",
+          prompt: "Candidate A, which country would you most like to visit in the future? Do you think you'll go there one day?",
+          activeCandidate: "Candidate A: Emily (AI Partner)",
+          instruction: "Listen to Emily's travel aspirations.",
+          duration: 25,
+          isAiTurn: true,
+          aiScript: "If I were granted an immediate ticket, Japan would stand right at the top of my bucket list. In all likelihood, I shall make the journey next year once I complete my degree, mainly to explore ancient temples and regional cuisine.",
+          scaffoldData: {
+            col1Title: "🤖 AI Peer Model (C1)",
+            col1: [
+              { en: "If I were granted an immediate ticket, Japan would stand right at the top of my bucket list.", es: "Si me concedieran un pasaje inmediato, Japón estaría en la cima de mi lista." },
+              { en: "In all likelihood, I shall make the journey...", es: "Con toda probabilidad, haré el viaje..." }
+            ],
+            col2Title: "🎯 Conditional & Probability",
+            col2: [
+              { en: "Notice the second conditional followed by future certainty.", es: "Nota el segundo condicional seguido de certeza futura." }
+            ],
+            col3Title: "⚡ Upcoming Round 2 Turn (You)",
+            col3: [
+              { en: "Prepare to answer: Have you done anything interesting with friends recently?", es: "Prepárate para responder: ¿Has hecho algo interesante con amigos recientemente?" }
+            ]
+          }
+        },
+        {
+          part: 1,
+          partLabel: "PART 1",
+          candidateLabel: "CANDIDATE B (YOU)",
+          themeLabel: "SOCIAL LIFE (ROUND 2)",
+          heading: "Part 1 • Round 2: Social Activities (Candidate B)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1bjiBNc5-2HX5CWocFBi6v-Wg6EyBdbmz&sz=w1600",
+          prompt: "Candidate B, have you done anything interesting with your friends recently? What did you do with them?",
+          activeCandidate: "Candidate B: You",
+          instruction: "Describe a recent social experience and justify why it was memorable (30 seconds).",
+          duration: 30,
+          isAiTurn: false,
+          scaffoldData: {
+            col1Title: "⏳ Narrative Openers",
+            col1: [
+              { en: "As a matter of fact, only last weekend my companions and I organized...", es: "De hecho, tan solo el fin de semana pasado mis compañeros y yo organizamos..." },
+              { en: "A memorable experience comes to mind: we took an impromptu road trip.", es: "Un recuerdo memorable me viene a la mente: hicimos un viaje por carretera improvisado." }
+            ],
+            col2Title: "🎯 Narrative Connectors",
+            col2: [
+              { en: "Not only did we catch up properly, but we also cooked together.", es: "No solo nos pusimos al día bien, sino que también cocinamos juntos." },
+              { en: "In addition to escaping academic routines, we stayed up reminiscing.", es: "Además de escapar de rutinas académicas, nos quedamos recordando anécdotas." }
+            ],
+            col3Title: "⚡ Socializing Idioms",
+            col3: [
+              { en: "We had the time of our lives laughing uncontrollably.", es: "La pasamos de maravilla riéndonos sin parar." }
+            ]
+          }
+        },
+
+        // Round 3
+        {
+          part: 1,
+          partLabel: "PART 1",
+          candidateLabel: "CANDIDATE A (AI)",
+          themeLabel: "READING HABITS (ROUND 3)",
+          heading: "Part 1 • Round 3: Reading Preferences (Candidate A)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1bjiBNc5-2HX5CWocFBi6v-Wg6EyBdbmz&sz=w1600",
+          prompt: "Candidate A, do you like reading? What do you read and why do you like it?",
+          activeCandidate: "Candidate A: Emily (AI Partner)",
+          instruction: "Listen to Emily's literary evaluation.",
+          duration: 25,
+          isAiTurn: true,
+          aiScript: "I am an avid reader of historical fiction and non-fiction essays. To my mind, immersing myself in well-crafted prose expands my lexical repertoire while offering a welcome break from digital screens.",
+          scaffoldData: {
+            col1Title: "🤖 AI Peer Model (C1)",
+            col1: [
+              { en: "I am an avid reader of...", es: "Soy un/a ávido/a lector/a de..." },
+              { en: "Expands my lexical repertoire while offering a welcome break...", es: "Expande mi repertorio léxico mientras ofrece un grato descanso..." }
+            ],
+            col2Title: "🎯 Collocations",
+            col2: [
+              { en: "'Avid reader' and 'lexical repertoire' demonstrate C1 precision.", es: "'Avid reader' y 'lexical repertoire' demuestran precisión C1." }
+            ],
+            col3Title: "⚡ Upcoming Round 3 Turn (You)",
+            col3: [
+              { en: "Prepare to answer: Have you got any plans for this weekend?", es: "Prepárate para responder: ¿Tienes planes para este fin de semana?" }
+            ]
+          }
+        },
+        {
+          part: 1,
+          partLabel: "PART 1",
+          candidateLabel: "CANDIDATE B (YOU)",
+          themeLabel: "WEEKEND PLANS (ROUND 3)",
+          heading: "Part 1 • Round 3: Weekend Routine (Candidate B)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1bjiBNc5-2HX5CWocFBi6v-Wg6EyBdbmz&sz=w1600",
+          prompt: "Candidate B, have you got any plans for this weekend? What are you going to do?",
+          activeCandidate: "Candidate B: You",
+          instruction: "Detail your weekend intentions and justify your downtime (30 seconds).",
+          duration: 30,
+          isAiTurn: false,
+          scaffoldData: {
+            col1Title: "⏳ Future Intentions",
+            col1: [
+              { en: "Assuming circumstances remain favorable, I plan to dedicate Saturday to...", es: "Asumiendo que las circunstancias sean favorables, planeo dedicar el sábado a..." },
+              { en: "I have arranged to go for an outdoor hike in the nearby countryside.", es: "He coordinado salir a una caminata al aire libre por el campo cercano." }
+            ],
+            col2Title: "🎯 Extension Linkers",
+            col2: [
+              { en: "In addition to recharging my batteries, I aim to catch up on reading.", es: "Además de recargar energías, apunto a ponerme al día con lecturas." },
+              { en: "Mainly because unplugging from notifications is essential for mental clarity.", es: "Principalmente porque desconectarse de notificaciones es esencial para la claridad mental." }
+            ],
+            col3Title: "⚡ Restorative Lexicon",
+            col3: [
+              { en: "A well-deserved hiatus from demanding weekly deadlines.", es: "Un merecido respiro de los exigentes plazos semanales." }
+            ]
+          }
+        },
+
+        // ===================== PART 2 =====================
+        {
+          part: 2,
+          partLabel: "PART 2",
+          candidateLabel: "CANDIDATE A (AI)",
+          themeLabel: "FOOTBALL GAMES",
+          heading: "Part 2 • Long Turn: Candidate A (AI Partner Model)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1EcU2Dd8KE4O72Mp4crr8zT1zS-VgEyS3&sz=w1600",
+          prompt: "Candidate A, it's your turn first. Here are your photographs. They show people enjoying different football games. I'd like you to compare the photographs, and say what you think the people are enjoying about these football games. All right?",
+          leadQuestion: "What do you think the people are enjoying about these football games?",
+          activeCandidate: "Candidate A: Emily (AI Partner)",
+          instruction: "Listen to Emily compare both photos for 1 full minute.",
+          duration: 50,
+          visual: "photosFootball",
+          isAiTurn: true,
+          aiScript: "Both photographs portray people immersed in football, albeit in contrasting environments. In the top picture, a family appears to relish spontaneous, informal physical play outdoors. The children look thoroughly exhilarated, enjoying wholesome bonding far removed from screens. In stark contrast, the bottom picture shows thousands of spectators in an arena who are absorbed in collective euphoria and cheering for their club. Whereas the park game is active and intimate, the stadium experience is passive yet thrilling due to the electric atmosphere.",
+          scaffoldData: {
+            col1Title: "🤖 AI Comparative Model",
+            col1: [
+              { en: "Both photographs portray people... albeit in contrasting environments.", es: "Ambas fotos retratan a personas... aunque en entornos contrastantes." },
+              { en: "In stark contrast, the bottom picture shows...", es: "En marcado contraste, la foto inferior muestra..." }
+            ],
+            col2Title: "⚖️ Connectors Used",
+            col2: [
+              { en: "Whereas the park game is active... the stadium experience is passive...", es: "Mientras el juego en el parque es activo... la experiencia en el estadio es pasiva..." },
+              { en: "Enjoying wholesome bonding far removed from screens.", es: "Disfrutando un vínculo saludable muy alejado de pantallas." }
+            ],
+            col3Title: "⚡ Upcoming Follow-up (You)",
+            col3: [
+              { en: "Prepare to answer: Do you enjoy watching football games?", es: "Prepárate para responder si disfrutas ver partidos de fútbol." }
+            ]
+          }
+        },
+        {
+          part: 2,
+          partLabel: "PART 2",
+          candidateLabel: "CANDIDATE B (YOU)",
+          themeLabel: "FOLLOW-UP QUESTION",
+          heading: "Part 2 • Follow-up Question: Candidate B (You)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1EcU2Dd8KE4O72Mp4crr8zT1zS-VgEyS3&sz=w1600",
+          prompt: "Candidate B, do you enjoy watching football games? Why? / Why not?",
+          leadQuestion: "Do you enjoy watching football games? (Why? / Why not?)",
+          activeCandidate: "Candidate B: You",
+          instruction: "Give a direct personal answer with clear justification (30 seconds).",
+          duration: 30,
+          visual: "photosFootball",
+          isAiTurn: false,
+          scaffoldData: {
+            col1Title: "⏳ Personal Stance Starters",
+            col1: [
+              { en: "In my opinion, watching high-stakes tournaments is intensely thrilling.", es: "En mi opinión, ver torneos de alta tensión es sumamente emocionante." },
+              { en: "I'd say that I definitely prefer participating rather than sitting as a fan.", es: "Yo diría que definitivamente prefiero participar antes que sentarme como aficionado/a." }
+            ],
+            col2Title: "🎯 Extension & In Addition",
+            col2: [
+              { en: "Mainly because dramatic tactical tension keeps viewers completely on edge.", es: "Principalmente porque la tensión táctica mantiene a los espectadores al límite." },
+              { en: "In addition to the athletic spectacle, it acts as a catalyst for social gatherings.", es: "Además del espectáculo atlético, actúa como catalizador de reuniones sociales." }
+            ],
+            col3Title: "⚡ Spectating Lexicon",
+            col3: [
+              { en: "Root passionately for my club through triumphs and defeats.", es: "Alentar con pasión a mi club en victorias y derrotas." }
+            ]
+          }
+        },
+        {
+          part: 2,
+          partLabel: "PART 2",
+          candidateLabel: "CANDIDATE B (YOU)",
+          themeLabel: "TRAVELLING WAYS",
+          heading: "Part 2 • Long Turn: Candidate B (Your Turn!)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1EcU2Dd8KE4O72Mp4crr8zT1zS-VgEyS3&sz=w1600",
+          prompt: "Now, Candidate B, here are your photographs. They show people travelling in different ways. I'd like you to compare the photographs, and say what might be good or bad for the people about travelling in these ways. All right?",
+          leadQuestion: "What might be good or bad for the people about travelling in these ways?",
+          activeCandidate: "Candidate B: You",
+          instruction: "Speak for 1 full minute comparing both photos and analyzing pros and cons.",
+          duration: 60,
+          visual: "photosTravel",
+          isAiTurn: false,
+          scaffoldData: {
+            col1Title: "🖼️ Direct Comparative Starters",
+            col1: [
+              { en: "The top picture shows a family on a road trip, while the bottom picture shows a solo train passenger.", es: "La foto superior muestra a una familia en viaje por carretera, mientras la inferior muestra a una pasajera en tren." },
+              { en: "In one photo there are several people sharing a car, while in the other photo there is a woman on her own.", es: "En una foto hay varias personas compartiendo un auto, mientras en la otra hay una mujer sola." },
+              { en: "In the picture above it looks as if navigating is stressful, while in the one below it looks serene.", es: "En la foto de arriba parece que orientarse es estresante, mientras en la de abajo luce sereno." }
+            ],
+            col2Title: "⚖️ Evaluating Pros & Cons",
+            col2: [
+              { en: "One difference between the pictures is that driving grants autonomy, whereas the train adheres to a schedule.", es: "Una diferencia es que manejar otorga autonomía, mientras el tren se apega a un horario." },
+              { en: "The biggest difference between them is that driving can be stressful, but train travel is relaxing.", es: "La mayor diferencia es que manejar puede ser estresante, pero viajar en tren es relajante." },
+              { en: "Being stuck in car traffic isn't so comfortable as sitting back watching landscapes glide past.", es: "Estar atrapado en el tráfico no es tan cómodo como recostarse a ver pasar los paisajes." }
+            ],
+            col3Title: "⚡ Travel Lexicon",
+            col3: [
+              { en: "In my opinion, driving is convenient for families despite the cramped space.", es: "En mi opinión, manejar es conveniente para familias a pesar del espacio reducido." },
+              { en: "I'd say that rail travel offers invaluable peace of mind and time to read.", es: "Yo diría que viajar en tren ofrece una invaluable tranquilidad y tiempo para leer." }
+            ]
+          }
+        },
+        {
+          part: 2,
+          partLabel: "PART 2",
+          candidateLabel: "CANDIDATE A (AI)",
+          themeLabel: "FOLLOW-UP QUESTION",
+          heading: "Part 2 • Follow-up Question: Candidate A (AI Partner)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1EcU2Dd8KE4O72Mp4crr8zT1zS-VgEyS3&sz=w1600",
+          prompt: "Candidate A, do you prefer travelling by car or train? Why?",
+          leadQuestion: "Do you prefer travelling by car or train? (Why?)",
+          activeCandidate: "Candidate A: Emily (AI Partner)",
+          instruction: "Listen to Emily answer the follow-up question on your photographs.",
+          duration: 30,
+          visual: "photosTravel",
+          isAiTurn: true,
+          aiScript: "Without hesitation, I would opt for train travel any day. Mainly because it completely spares you the frustration of traffic jams and parking hunts, allowing me to catch up on reading while enjoying the panoramic scenery.",
+          scaffoldData: {
+            col1Title: "🤖 AI Peer Follow-up Model",
+            col1: [
+              { en: "Without hesitation, I would opt for train travel any day.", es: "Sin vacilación, optaría por viajar en tren cualquier día." },
+              { en: "Mainly because it completely spares you the frustration of traffic jams...", es: "Principalmente porque te libra por completo de la frustración del tráfico..." }
+            ],
+            col2Title: "🎯 Conciseness (30s)",
+            col2: [
+              { en: "Notice how Emily answers directly in sentence 1 and gives two clear justifications.", es: "Nota cómo Emily responde directamente en la primera oración y da dos justificaciones." }
+            ],
+            col3Title: "⚡ Takeaway",
+            col3: [
+              { en: "Follow-up answers should be precise and well-rounded without rambling.", es: "Las respuestas de seguimiento deben ser precisas y completas sin divagar." }
+            ]
+          }
+        },
+
+        // ===================== PART 3 =====================
+        {
+          part: 3,
+          partLabel: "PART 3",
+          candidateLabel: "BOTH CANDIDATES",
+          themeLabel: "PREPARATION (15S)",
+          heading: "Part 3 • Preparation (15 Seconds Silent Reading Task)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1i_qxpfJGdEQUQBMG7AyRX1Y2NCgW4boS&sz=w1600",
+          prompt: "Now, I'd like you to talk about something together for about two minutes. I'd like you to imagine that a teacher has asked her students to discuss whether it's better to buy things in shops or online. Here are some ideas the students have had and a question for you to discuss. First you have some time to look at the task.",
+          activeCandidate: "Candidate A & Candidate B (Silent Prep)",
+          instruction: "Read the central question and options on the spidergram (15 seconds silence).",
+          duration: 15,
+          isPreparationStep: true,
+          visual: "spiderweb",
+          isAiTurn: false,
+          scaffoldData: {
+            col1Title: "📋 Strategic Focus (15s Silence)",
+            col1: [
+              { en: "Central question: 'Is it better to buy things in shops or online?'", es: "Pregunta central: '¿Es mejor comprar cosas en tiendas o por internet?'" },
+              { en: "No one speaks during this countdown. Scan all 5 bubbles.", es: "Nadie habla durante este conteo. Revisa las 5 burbujas." }
+            ],
+            col2Title: "🤖 AI Strategy (Getting Started)",
+            col2: [
+              { en: "Emily (AI) will kick off using: 'Which one shall we start with?'", es: "Emily (IA) arrancará usando: 'Which one shall we start with?'" },
+              { en: "Be ready to react to her prompt in 15 seconds.", es: "Prepárate para reaccionar a su propuesta en 15 segundos." }
+            ],
+            col3Title: "⚡ Key Phrases",
+            col3: [
+              { en: "Good point / I fully agree.", es: "Buen punto / Estoy totalmente de acuerdo." },
+              { en: "Yeah, but the thing is...", es: "Sí, pero el detalle es..." }
+            ]
+          }
+        },
+        {
+          part: 3,
+          partLabel: "PART 3",
+          candidateLabel: "COLLABORATIVE PACER",
+          themeLabel: "DISCUSSION (PACER 15s/15s)",
+          heading: "Part 3 • Guided Turn-Taking (4 Topics • 120s Total)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1i_qxpfJGdEQUQBMG7AyRX1Y2NCgW4boS&sz=w1600",
+          prompt: "Now, talk to each other about whether you think it's better to buy things in shops or online.",
+          activeCandidate: "Turn-Taking Pacer Active",
+          instruction: "Interact following the strict 15-second alternations led by Emily (AI).",
+          duration: 120,
+          isPacerStep: true,
+          visual: "spiderweb",
+          scaffoldData: {
+            col1Title: "🚀 Getting Started & Passing",
+            col1: [
+              { en: "Which one shall we start with?", es: "¿Con cuál empezamos?" },
+              { en: "What do you think about this idea?", es: "¿Qué piensas sobre esta idea?" },
+              { en: "Don't you agree?", es: "¿No estás de acuerdo?" }
+            ],
+            col2Title: "💬 Agreeing & Disagreeing",
+            col2: [
+              { en: "I couldn't agree more.", es: "No podría estar más de acuerdo." },
+              { en: "That's just what I was thinking.", es: "Eso es justo lo que estaba pensando." },
+              { en: "Weeeeell maybe, but the thing is...", es: "Buuueeeno tal vez, pero el tema es..." }
+            ],
+            col3Title: "⏩ Moving On & Interrupting",
+            col3: [
+              { en: "Sorry to interrupt but...", es: "Disculpa que interrumpa pero..." },
+              { en: "We're running out of time, so let's move on.", es: "Nos estamos quedando sin tiempo, así que pasemos al siguiente." },
+              { en: "Shall we move onto this topic now?", es: "¿Pasamos a este tema ahora?" }
+            ]
+          }
+        },
+        {
+          part: 3,
+          partLabel: "PART 3",
+          candidateLabel: "COLLABORATIVE PACER",
+          themeLabel: "DECISION (PACER 15s/15s)",
+          heading: "Part 3 • Decision Phase (Alternating 15s Rounds • 60s Total)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1i_qxpfJGdEQUQBMG7AyRX1Y2NCgW4boS&sz=w1600",
+          prompt: "Thank you. Now you have about a minute to decide which of these things is most important to think about when you're buying something expensive.",
+          activeCandidate: "Emily (AI) & You (Consensus Negotiation)",
+          instruction: "Negotiate consensus through two alternating 15-second rounds.",
+          duration: 60,
+          visual: "spiderweb",
+          isPacerDecisionStep: true,
+          scaffoldData: {
+            col1Title: "🏁 Reaching a Decision",
+            col1: [
+              { en: "We can eliminate this topic right away. Don't you think?", es: "Podemos eliminar este punto de inmediato. ¿No crees?" },
+              { en: "Are we both in favour of security?", es: "¿Estamos ambos a favor de seguridad?" },
+              { en: "Okay, so we agree.", es: "Bien, entonces estamos de acuerdo." }
+            ],
+            col2Title: "⚖️ Weighing Options",
+            col2: [
+              { en: "I guess you think we should choose security?", es: "¿Supongo que piensas que deberíamos elegir seguridad?" },
+              { en: "While getting help is useful, security prevents fraud.", es: "Aunque la ayuda es útil, la seguridad evita fraudes." }
+            ],
+            col3Title: "⚡ Closing Formulas",
+            col3: [
+              { en: "Let's settle on security as our joint verdict.", es: "Acordemos seguridad como nuestro veredicto conjunto." }
+            ]
+          }
+        },
+
+        // ===================== PART 4 =====================
+        {
+          part: 4,
+          partLabel: "PART 4",
+          candidateLabel: "CANDIDATE A (AI)",
+          themeLabel: "SHOPS IN THE FUTURE",
+          heading: "Part 4 • Question 1: Future of Retail (Candidate A)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1oV-Pm0D7SQ5aaXsB0T0TeLQPoyhTXTVB&sz=w1600",
+          prompt: "Some people say there will be no need for shops in the future because we'll buy everything online. What do you think, Candidate A?",
+          activeCandidate: "Candidate A: Emily (AI Partner)",
+          instruction: "Listen to Emily's 40-second C1 viewpoint.",
+          duration: 40,
+          isAiTurn: true,
+          aiScript: "From my perspective, that prediction is exaggerated. While e-commerce will continue expanding exponentially, brick-and-mortar stores fulfill essential social functions. People visit high streets not merely to buy goods, but to socialize, browse tactile fabrics, and dine out. Physical retail will evolve into experiential showrooms rather than disappearing completely.",
+          scaffoldData: {
+            col1Title: "🤖 AI Argument Model",
+            col1: [
+              { en: "From my perspective, that prediction is exaggerated.", es: "Desde mi perspectiva, esa predicción es exagerada." },
+              { en: "Brick-and-mortar stores fulfill essential social functions.", es: "Las tiendas físicas cumplen funciones sociales esenciales." }
+            ],
+            col2Title: "🎯 Upcoming Follow-up (You)",
+            col2: [
+              { en: "The examiner will ask: 'And what do you think, Candidate B? Do you agree?'", es: "El examinador preguntará si estás de acuerdo con Candidate A." }
+            ],
+            col3Title: "⚡ Useful Reaction",
+            col3: [
+              { en: "I couldn't agree more with Emily.", es: "No podría estar más de acuerdo con Emily." }
+            ]
+          }
+        },
+        {
+          part: 4,
+          partLabel: "PART 4",
+          candidateLabel: "CANDIDATE B (YOU)",
+          themeLabel: "FOLLOW-UP REACTION",
+          heading: "Part 4 • Question 1 Follow-up: Your Reaction",
+          examinerImg: "https://drive.google.com/thumbnail?id=1oV-Pm0D7SQ5aaXsB0T0TeLQPoyhTXTVB&sz=w1600",
+          prompt: "And what do you think, Candidate B? Do you agree with Candidate A?",
+          activeCandidate: "Candidate B: You",
+          instruction: "React to Candidate A's arguments and expand with your own ideas (30 seconds).",
+          duration: 30,
+          isAiTurn: false,
+          scaffoldData: {
+            col1Title: "💬 Reacting to Partner",
+            col1: [
+              { en: "I couldn't agree more with Candidate A.", es: "No podría estar más de acuerdo con Candidate A." },
+              { en: "Good point, but looking at it from an economic angle...", es: "Buen punto, pero mirándolo desde un ángulo económico..." }
+            ],
+            col2Title: "🎯 Extension Linkers",
+            col2: [
+              { en: "In addition to shopping, physical stores provide local employment.", es: "Además de comprar, las tiendas físicas brindan empleo local." },
+              { en: "Consequently, omnichannel commerce is the true future.", es: "Por consiguiente, el comercio omnicanal es el verdadero futuro." }
+            ],
+            col3Title: "⚡ C1 Lexicon",
+            col3: [
+              { en: "Tactile assessment of goods before purchasing.", es: "Evaluación táctil de bienes antes de comprar." }
+            ]
+          }
+        },
+        {
+          part: 4,
+          partLabel: "PART 4",
+          candidateLabel: "CANDIDATE B (YOU)",
+          themeLabel: "CONSUMER CULTURE",
+          heading: "Part 4 • Question 2: Consumerism (Candidate B)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1oV-Pm0D7SQ5aaXsB0T0TeLQPoyhTXTVB&sz=w1600",
+          prompt: "Candidate B, do you think it's true that we buy a lot of things we don't really need these days? Why? / Why not?",
+          activeCandidate: "Candidate B: You",
+          instruction: "Answer the primary question directly and justify your views (45 seconds).",
+          duration: 45,
+          isAiTurn: false,
+          scaffoldData: {
+            col1Title: "🌐 Critical Consumerism Openers",
+            col1: [
+              { en: "There is an undeniable, rampant trend toward hyper-consumerism.", es: "Hay una innegable y desenfrenada tendencia hacia el hiperconsumismo." },
+              { en: "Consumer culture systematically fabricates artificial desires.", es: "La cultura consumista fabrica sistemáticamente deseos artificiales." }
+            ],
+            col2Title: "🎯 Cause-and-Effect Connectors",
+            col2: [
+              { en: "This phenomenon largely stems from personalized social media algorithms.", es: "Este fenómeno proviene en gran medida de algoritmos de redes sociales." },
+              { en: "In addition to flash discounts, targeted ads manipulate impulse buying.", es: "Además de ofertas relámpago, los anuncios manipulan compras por impulso." }
+            ],
+            col3Title: "⚡ Consumer Culture Lexicon",
+            col3: [
+              { en: "Frivolous expenditures driven by fleeting micro-trends.", es: "Gastos frívolos impulsados por microtendencias pasajeras." },
+              { en: "Adopting a minimalist mindset focused on sustainability.", es: "Adoptar una mentalidad minimalista centrada en la sostenibilidad." }
+            ]
+          }
+        },
+        {
+          part: 4,
+          partLabel: "PART 4",
+          candidateLabel: "CANDIDATE A (AI)",
+          themeLabel: "FOLLOW-UP REACTION",
+          heading: "Part 4 • Question 2 Follow-up: Candidate A Reaction",
+          examinerImg: "https://drive.google.com/thumbnail?id=1oV-Pm0D7SQ5aaXsB0T0TeLQPoyhTXTVB&sz=w1600",
+          prompt: "And what about you, Candidate A? Do you agree? What's your view?",
+          activeCandidate: "Candidate A: Emily (AI Partner)",
+          instruction: "Listen to Emily react to your perspective on consumerism.",
+          duration: 25,
+          isAiTurn: true,
+          aiScript: "I couldn't agree more with Candidate B. We live in a throwaway society where targeted advertising creates a false sense of urgency, driving people to accumulate clutter that brings zero lasting happiness.",
+          scaffoldData: {
+            col1Title: "🤖 AI Reaction Model",
+            col1: [
+              { en: "I couldn't agree more with Candidate B.", es: "No podría estar más de acuerdo con Candidate B." },
+              { en: "We live in a throwaway society where targeted advertising creates a false sense of urgency...", es: "Vivimos en una sociedad de usar y tirar donde la publicidad dirigida crea falsa urgencia..." }
+            ],
+            col2Title: "🎯 Observation",
+            col2: [
+              { en: "Notice how Emily uses 'throwaway society' and 'false sense of urgency'.", es: "Nota cómo Emily usa colocaciones C1 de alto impacto." }
+            ],
+            col3Title: "⚡ Upcoming Collaborative Task",
+            col3: [
+              { en: "Prepare for the final 'Talk Together' turn-taking discussion.", es: "Prepárate para la discusión final de alternancia 'Talk Together'." }
+            ]
+          }
+        },
+        {
+          part: 4,
+          partLabel: "PART 4",
+          candidateLabel: "COLLABORATIVE PACER",
+          themeLabel: "TALK TOGETHER: LEISURE",
+          heading: "Part 4 • Collaborative Discussion (Pacer 15s/15s • 60s Total)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1oV-Pm0D7SQ5aaXsB0T0TeLQPoyhTXTVB&sz=w1600",
+          prompt: "Some people say that shopping is a leisure activity nowadays, while others think of it simply as a necessity. Now, talk together about whether shopping should be treated as a leisure activity.",
+          activeCandidate: "Emily (AI) & You (15s Turn-Taking)",
+          instruction: "Interact following the alternating 15-second pacer rounds.",
+          duration: 60,
+          isPacerPart4Step: true,
+          scaffoldData: {
+            col1Title: "🤝 Opening & Passing",
+            col1: [
+              { en: "What do you think about this idea?", es: "¿Qué piensas sobre esta idea?" },
+              { en: "How do you feel about that one?", es: "¿Qué te parece esa?" }
+            ],
+            col2Title: "💬 Interacting & Reacting",
+            col2: [
+              { en: "That's just what I was thinking.", es: "Eso es justo lo que estaba pensando." },
+              { en: "Sorry to interrupt but...", es: "Disculpa que interrumpa pero..." }
+            ],
+            col3Title: "⚡ Synthesis",
+            col3: [
+              { en: "On balance, shopping malls are designed as entertainment centers.", es: "En balance, los centros comerciales están diseñados como centros de ocio." }
+            ]
+          }
+        },
+        {
+          part: 4,
+          partLabel: "PART 4",
+          candidateLabel: "COLLABORATIVE PACER",
+          themeLabel: "TALK TOGETHER: ADVERTISING",
+          heading: "Part 4 • Collaborative Discussion 2: Advertising (Pacer 15s/15s • 60s Total)",
+          examinerImg: "https://drive.google.com/thumbnail?id=1oV-Pm0D7SQ5aaXsB0T0TeLQPoyhTXTVB&sz=w1600",
+          prompt: "Do you think that advertising encourages people to spend too much money? Now, talk together about the impact advertising has on our everyday choices.",
+          activeCandidate: "Emily (AI) & You (15s Turn-Taking)",
+          instruction: "Interact dynamically, debate the impact of advertising, and negotiate a joint perspective.",
+          duration: 60,
+          isPacerPart4Round2Step: true,
+          scaffoldData: {
+            col1Title: "🤝 Advertising Debate Openers",
+            col1: [
+              { en: "Would you agree that modern advertising exerts an unhealthy influence on our finances?", es: "¿Estarías de acuerdo con que la publicidad moderna ejerce una influencia perjudicial en nuestras finanzas?" },
+              { en: "From your perspective, does advertising genuinely inform us or merely manipulate us?", es: "¿Desde tu perspectiva, la publicidad genuinamente nos informa o simplemente nos manipula?" }
+            ],
+            col2Title: "⚖️ In Addition & Counter-arguments",
+            col2: [
+              { en: "I agree entirely; in addition, targeted algorithms track our preferences to induce impulse purchases.", es: "Estoy totalmente de acuerdo; además, algoritmos dirigidos rastrean preferencias para inducir compras por impulso." },
+              { en: "On the other hand, advertising allows innovative local startups to gain visibility in competitive markets.", es: "Por otra parte, la publicidad permite a emprendimientos locales innovadores ganar visibilidad." }
+            ],
+            col3Title: "⚡ Marketing Lexicon",
+            col3: [
+              { en: "Subconscious psychological persuasion steering consumer habits.", es: "Persuasión psicológica subconsciente guiando hábitos de consumo." },
+              { en: "Resist relentless promotional campaigns and make rational decisions.", es: "Resistir implacables campañas promocionales y tomar decisiones racionales." }
+            ]
+          }
+        }
+      ];
+    }
+
+    function startInitialExamSession() {
+      const modal = document.getElementById('modalStartSimulator');
+      if (modal) {
+        modal.style.display = 'none';
+      }
+
+      getAudioContext();
+
+      currentStepIndex = 0;
+      lastRenderedPart = 1;
+      renderCurrentStep();
+    }
+
+    function getSeniorBritishMaleVoice() {
+      const voices = window.speechSynthesis.getVoices();
+      let v = voices.find(voice => (voice.lang === 'en-GB' || voice.lang === 'en_GB') && 
+        (voice.name.toLowerCase().includes('george') || voice.name.toLowerCase().includes('daniel') || voice.name.toLowerCase().includes('male')));
+      if (!v) {
+        v = voices.find(voice => voice.lang.startsWith('en') && 
+          (voice.name.toLowerCase().includes('david') || voice.name.toLowerCase().includes('male') || voice.name.toLowerCase().includes('senior')));
+      }
+      return v || voices.find(voice => voice.lang.startsWith('en'));
+    }
+
+    function getAiPartnerFemaleVoice() {
+      const voices = window.speechSynthesis.getVoices();
+      let v = voices.find(voice => (voice.lang === 'en-GB' || voice.lang === 'en_GB') && 
+        (voice.name.toLowerCase().includes('female') || voice.name.toLowerCase().includes('hazel') || voice.name.toLowerCase().includes('susan') || voice.name.toLowerCase().includes('serena')));
+      if (!v) {
+        v = voices.find(voice => voice.lang === 'en-US' && 
+          (voice.name.toLowerCase().includes('female') || voice.name.toLowerCase().includes('zira') || voice.name.toLowerCase().includes('samantha')));
+      }
+      return v || getSeniorBritishMaleVoice();
+    }
+
+    function speakExaminer(text, onComplete) {
+      if (!('speechSynthesis' in window)) {
+        if (onComplete) onComplete();
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+      if (speechGuardTimeout) clearTimeout(speechGuardTimeout);
+
+      isExaminerSpeaking = true;
+      document.getElementById('interlocutorSpeakingPill').style.display = 'inline-flex';
+      document.getElementById('speakingPillText').innerText = "Interlocutor is speaking...";
+      document.getElementById('subTurnBadge').style.display = 'none';
+
+      const u = new SpeechSynthesisUtterance(text);
+      const v = getSeniorBritishMaleVoice();
+      if (v) u.voice = v;
+      u.lang = 'en-GB';
+      u.pitch = 0.70;
+      u.rate = 0.88;
+      u.volume = 1.0;
+
+      const minMs = Math.max(1200, (text.split(/\s+/).length / 2.2) * 1000);
+      const startTime = Date.now();
+      let ended = false;
+
+      function done() {
+        if (ended || isPausedByUser) return;
+        ended = true;
+        isExaminerSpeaking = false;
+        if (speechGuardTimeout) clearTimeout(speechGuardTimeout);
+        if (onComplete) onComplete();
+      }
+
+      u.onend = function() {
+        const elapsed = Date.now() - startTime;
+        if (elapsed < (minMs * 0.75)) {
+          speechGuardTimeout = setTimeout(done, minMs - elapsed);
+        } else {
+          done();
+        }
+      };
+      u.onerror = done;
+      speechGuardTimeout = setTimeout(done, minMs + 4000);
+
+      window.speechSynthesis.speak(u);
+    }
+
+    function speakAiPartner(text, onComplete) {
+      if (!('speechSynthesis' in window)) {
+        if (onComplete) onComplete();
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+      if (speechGuardTimeout) clearTimeout(speechGuardTimeout);
+
+      isAiPartnerSpeaking = true;
+      document.getElementById('interlocutorSpeakingPill').style.display = 'inline-flex';
+      document.getElementById('speakingPillText').innerText = "🤖 Emily (AI Partner) is speaking...";
+      document.getElementById('subTurnBadge').style.display = 'none';
+
+      const u = new SpeechSynthesisUtterance(text);
+      const v = getAiPartnerFemaleVoice();
+      if (v) u.voice = v;
+      u.lang = 'en-GB';
+      u.pitch = 1.15;
+      u.rate = 0.95;
+      u.volume = 1.0;
+
+      const minMs = Math.max(1200, (text.split(/\s+/).length / 2.3) * 1000);
+      const startTime = Date.now();
+      let ended = false;
+
+      function done() {
+        if (ended || isPausedByUser) return;
+        ended = true;
+        isAiPartnerSpeaking = false;
+        if (speechGuardTimeout) clearTimeout(speechGuardTimeout);
+        if (onComplete) onComplete();
+      }
+
+      u.onend = function() {
+        const elapsed = Date.now() - startTime;
+        if (elapsed < (minMs * 0.75)) {
+          speechGuardTimeout = setTimeout(done, minMs - elapsed);
+        } else {
+          done();
+        }
+      };
+      u.onerror = done;
+      speechGuardTimeout = setTimeout(done, minMs + 4000);
+
+      window.speechSynthesis.speak(u);
+    }
+
+    // CONTROL DINÁMICO DE TRANSICIONES: PRONUNCIA LA PARTE SIN CONGELAR LA PANTALLA
+    function checkAndTriggerPartTransition(st, proceedCallback) {
+      if (st.part > lastRenderedPart) {
+        lastRenderedPart = st.part;
+        let partTitle = "";
+        if (st.part === 2) partTitle = "Part Two";
+        else if (st.part === 3) partTitle = "Part Three";
+        else if (st.part === 4) partTitle = "Part Four";
+
+        const transModal = document.getElementById('modalPartTransition');
+        const transTitle = document.getElementById('transTitle');
+        const transCount = document.getElementById('transCount');
+
+        if (transTitle) transTitle.innerText = partTitle;
+        if (transCount) transCount.innerText = "3";
+        if (transModal) transModal.style.display = "flex";
+
+        speakExaminer(partTitle, null);
+
+        let countdown = 3;
+        const countInterval = trackInterval(setInterval(() => {
+          countdown--;
+          if (transCount) transCount.innerText = countdown;
+          if (countdown <= 0) {
+            clearInterval(countInterval);
+            if (transModal) transModal.style.display = "none";
+            proceedCallback();
+          }
+        }, 1000));
+      } else {
+        proceedCallback();
+      }
+    }
+
+    function renderCurrentStep() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      clearAllTimers();
+      turnTimerRunning = false;
+      isPausedByUser = false;
+      updatePauseButtonState(false);
+
+      const steps = getStepsSequence();
+      if (currentStepIndex >= steps.length) {
+        document.getElementById('modalCompletion').style.display = 'flex';
+        return;
+      }
+
+      const st = steps[currentStepIndex];
+
+      checkAndTriggerPartTransition(st, () => {
+        executeStepRender(st, steps.length);
+      });
+    }
+
+    function executeStepRender(st, totalSteps) {
+      document.getElementById('trioPartLabel').innerText = st.partLabel;
+      document.getElementById('trioCandidateLabel').innerText = st.candidateLabel;
+      document.getElementById('trioThemeLabel').innerText = st.themeLabel;
+
+      document.getElementById('mainExaminerPhoto').src = st.examinerImg;
+      document.getElementById('speechTextDisplay').innerText = `"${st.prompt}"`;
+      document.getElementById('activeCandidateTitle').innerText = st.activeCandidate;
+      document.getElementById('activeCandidateInstruction').innerText = st.instruction;
+      document.getElementById('statusPartTrack').innerText = `Step ${currentStepIndex + 1} of ${totalSteps} • ${st.heading}`;
+
+      const leadBanner = document.getElementById('p2LeadQuestionBlock');
+      const leadText = document.getElementById('p2LeadQuestionText');
+      if (st.leadQuestion) {
+        leadBanner.style.display = "block";
+        leadText.innerText = st.leadQuestion;
+      } else {
+        leadBanner.style.display = "none";
+      }
+
+      const visualSlot = document.getElementById('dynamicVisualSlot');
+      const pacerHud = document.getElementById('pacerHudBar');
+      pacerHud.style.display = 'none';
+
+      if (st.visual === "photosFootball") {
+        visualSlot.style.display = "block";
+        visualSlot.innerHTML = `
+          <div class="photos-comparison-grid">
+            <div class="photo-card-box">
+              <img src="https://activeforlife.com/img/large-webp-2x/2012/08/family-pickup-soccer.jpg" alt="Family Playing Football in Park">
+            </div>
+            <div class="photo-card-box">
+              <img src="https://editorial.uefa.com/resources/027c-16d18cd58044-1f031bd24e74-1000/format/wide1/fc_barcelona_v_juventus_group_g_-_uefa_champions_league.jpeg?imwidth=2048" alt="Stadium Football Match">
+            </div>
+          </div>
+        `;
+      } else if (st.visual === "photosTravel") {
+        visualSlot.style.display = "block";
+        visualSlot.innerHTML = `
+          <div class="photos-comparison-grid">
+            <div class="photo-card-box">
+              <img src="https://www.kia.com/content/dam/kwcms/pe/es/images/noticias/2024/marzo/viajes-familiares-auto.jpg" alt="Family Road Trip by Car">
+            </div>
+            <div class="photo-card-box">
+              <img src="https://d1bvpoagx8hqbg.cloudfront.net/originals/en-puente-diciembre-799a89368f357af75c96b1dd8d7554c9.jpg" alt="Solo Passenger on Train">
+            </div>
+          </div>
+        `;
+      } else if (st.visual === "spiderweb") {
+        visualSlot.style.display = "block";
+        visualSlot.innerHTML = `
+          <div class="spiderweb-canvas-container">
+            <svg class="spiderweb-svg-lines" viewBox="0 0 1020 640">
+              <line x1="120" y1="105" x2="510" y2="320" stroke="#0f172a" stroke-width="3.5" stroke-dasharray="7,7"/>
+              <line x1="900" y1="105" x2="510" y2="320" stroke="#0f172a" stroke-width="3.5" stroke-dasharray="7,7"/>
+              <line x1="120" y1="535" x2="510" y2="320" stroke="#0f172a" stroke-width="3.5" stroke-dasharray="7,7"/>
+              <line x1="900" y1="535" x2="510" y2="320" stroke="#0f172a" stroke-width="3.5" stroke-dasharray="7,7"/>
+              <line x1="510" y1="545" x2="510" y2="320" stroke="#0f172a" stroke-width="3.5" stroke-dasharray="7,7"/>
+            </svg>
+            <div class="spiderweb-bubble spider-pos-1">
+              <span class="emoji-icon">⏳</span>
+              the time it takes
+            </div>
+            <div class="spiderweb-bubble spider-pos-2">
+              <span class="emoji-icon">🤝</span>
+              getting help
+            </div>
+            <div class="spiderweb-bubble spider-pos-3">
+              <span class="emoji-icon">📦</span>
+              what you're buying
+            </div>
+            <div class="spiderweb-bubble spider-pos-4">
+              <span class="emoji-icon">🏷️</span>
+              amount of choice
+            </div>
+            <div class="spiderweb-bubble spider-pos-5">
+              <span class="emoji-icon">🔒</span>
+              security
+            </div>
+            <div class="spiderweb-center">
+              Is it better to buy things in shops or online?
+            </div>
+          </div>
+        `;
+      } else {
+        visualSlot.style.display = "none";
+        visualSlot.innerHTML = "";
+      }
+
+      renderSpecificScaffolding(st.scaffoldData);
+
+      // CASO ESPECIAL A: PARTE 3 PACER DISCUSIÓN (4 TEMAS x 30s = 120s)
+      if (st.isPacerStep) {
+        speakExaminer(st.prompt, () => {
+          playStartBell();
+          startPart3DiscussionPacer();
+        });
+        return;
+      }
+
+      // CASO ESPECIAL B: PARTE 3 PACER DECISIÓN (2 RONDAS x 30s = 60s)
+      if (st.isPacerDecisionStep) {
+        speakExaminer(st.prompt, () => {
+          playStartBell();
+          startPart3DecisionPacer();
+        });
+        return;
+      }
+
+      // CASO ESPECIAL C: PARTE 4 PACER TALK TOGETHER (60s)
+      if (st.isPacerPart4Step) {
+        speakExaminer(st.prompt, () => {
+          playStartBell();
+          startPart4DiscussionPacer();
+        });
+        return;
+      }
+
+      // CASO ESPECIAL D: PARTE 4 PACER TALK TOGETHER ROUND 2 (ADVERTISING - 60s)
+      if (st.isPacerPart4Round2Step) {
+        speakExaminer(st.prompt, () => {
+          playStartBell();
+          startPart4Round2DiscussionPacer();
+        });
+        return;
+      }
+
+      // CASO ESPECIAL E: TURNO DE MODELADO DEL AI PARTNER (CANDIDATE A)
+      if (st.isAiTurn) {
+        speakExaminer(st.prompt, () => {
+          playStartBell();
+          revealTimerAiPartner(st.duration, () => {
+            speakAiPartner(st.aiScript, () => {
+              playEndBell();
+              setTimeout(() => {
+                currentStepIndex++;
+                renderCurrentStep();
+              }, 1200);
+            });
+          });
+        });
+        return;
+      }
+
+      // CASO NORMAL: EL EXAMINADOR HABLA Y ARRANCA EL RELOJ DEL CANDIDATO HUMANO TRAS EL BEEP
+      turnSeconds = st.duration;
+      document.getElementById('interlocutorSpeakingPill').style.display = 'inline-flex';
+      document.getElementById('speakingPillText').innerText = "Interlocutor is speaking...";
+      document.getElementById('subTurnBadge').style.display = 'none';
+
+      speakExaminer(st.prompt, () => {
+        playStartBell();
+        revealAndStartTurnTimer(st.duration, st.isPreparationStep);
+      });
+    }
+
+    function revealTimerAiPartner(sec, onTimerReady) {
+      document.getElementById('interlocutorSpeakingPill').style.display = 'none';
+      const subBadge = document.getElementById('subTurnBadge');
+      subBadge.style.display = 'inline-flex';
+      subBadge.className = "turn-countdown-badge ai-speaking-state";
+      document.getElementById('badgeTimerText').innerText = `AI Speaking (${sec}s)`;
+      if (onTimerReady) onTimerReady();
+    }
+
+    // PACER DISCUSIÓN PARTE 3 (120s TOTAL • 4 TEMAS • AI 15s / USER 15s)
+    function startPart3DiscussionPacer() {
+      const pacerHud = document.getElementById('pacerHudBar');
+      pacerHud.style.display = 'grid';
+      document.getElementById('interlocutorSpeakingPill').style.display = 'none';
+      document.getElementById('subTurnBadge').style.display = 'none';
+
+      let global120 = 120;
+      let currentRound = 0;
+
+      const pacerScript = [
+        {
+          ai: "Which one shall we start with? In my opinion, 'the time it takes' is absolutely crucial because digital shopping saves countless hours, whereas travelling to retail stores often leads to traffic jams and long queues. What do you think about that, Candidate B?",
+          topic: "Topic 1: The Time it Takes"
+        },
+        {
+          ai: "I couldn't agree more with your point! But sorry to interrupt—we're running out of time, so shall we move onto 'getting help' in stores? Having experienced staff provide tailored, face-to-face recommendations is something online chatbots cannot replicate. Don't you agree?",
+          topic: "Topic 2: Getting Help in Shops"
+        },
+        {
+          ai: "Good point! Now, what about 'what you're buying'? When purchasing tailored clothes or high-end electronics, inspecting build quality and fit in person prevents buyer's remorse. Do you have anything to add to that?",
+          topic: "Topic 3: What You're Buying"
+        },
+        {
+          ai: "That's just what I was thinking! Finally, looking at 'amount of choice', e-commerce gives instant access to global inventories that no physical boutique could possibly stock. How do you feel about this idea?",
+          topic: "Topic 4: Amount of Choice"
+        }
+      ];
+
+      function updateMacro(sec) {
+        const m = Math.floor(sec / 60);
+        const s = sec % 60;
+        document.getElementById('pacerMacroClock').innerText = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+      }
+
+      function updatePacerClocks(aiSec, userSec) {
+        document.getElementById('pacerClockAi').innerText = aiSec + "s";
+        document.getElementById('pacerClockUser').innerText = userSec + "s";
+      }
+
+      function executeRound() {
+        if (currentRound >= 4) {
+          playEndBell();
+          setTimeout(() => {
+            currentStepIndex++;
+            renderCurrentStep();
+          }, 1200);
+          return;
+        }
+
+        const roundData = pacerScript[currentRound];
+        document.getElementById('trioThemeLabel').innerText = roundData.topic;
+
+        // TURNO AI (15s)
+        document.getElementById('pacerCardAi').className = "pacer-card active-ai";
+        document.getElementById('pacerCardUser').className = "pacer-card";
+        document.getElementById('activeCandidateTitle').innerText = "Candidate A: Emily (AI Speaking)";
+        document.getElementById('activeCandidateInstruction').innerText = "Listen closely to Emily's C1 prompt and pass.";
+
+        let aiMicro = 15;
+        updatePacerClocks(aiMicro, 15);
+        speakAiPartner(roundData.ai, () => {});
+
+        const aiInterval = trackInterval(setInterval(() => {
+          if (isPausedByUser) return;
+          aiMicro--;
+          global120--;
+          updateMacro(global120);
+          updatePacerClocks(aiMicro, 15);
+
+          if (aiMicro <= 0) {
+            clearInterval(aiInterval);
+
+            // TURNO USUARIO (15s)
+            playStartBell();
+            document.getElementById('pacerCardAi').className = "pacer-card";
+            document.getElementById('pacerCardUser').className = "pacer-card active-user";
+            document.getElementById('activeCandidateTitle').innerText = "Candidate B: You (Your Turn to Speak!)";
+            document.getElementById('activeCandidateInstruction').innerText = "React to Emily and link your ideas before time ends (15s).";
+
+            let userMicro = 15;
+            updatePacerClocks(0, userMicro);
+
+            const userInterval = trackInterval(setInterval(() => {
+              if (isPausedByUser) return;
+              userMicro--;
+              global120--;
+              updateMacro(global120);
+              updatePacerClocks(0, userMicro);
+
+              if (userMicro <= 0) {
+                clearInterval(userInterval);
+                currentRound++;
+                executeRound();
+              }
+            }, 1000));
+          }
+        }, 1000));
+      }
+
+      updateMacro(global120);
+      executeRound();
+    }
+
+    // PACER DECISIÓN PARTE 3 (60s TOTAL • AI 15s -> USER 15s -> AI 15s -> USER 15s)
+    function startPart3DecisionPacer() {
+      const pacerHud = document.getElementById('pacerHudBar');
+      pacerHud.style.display = 'grid';
+      document.getElementById('interlocutorSpeakingPill').style.display = 'none';
+      document.getElementById('subTurnBadge').style.display = 'none';
+
+      let global60 = 60;
+      let phase = 0;
+
+      const decisionScript = [
+        "Well, I think we can eliminate 'the time it takes' right away when investing substantial sums. To my mind, transactional security must be the most crucial parameter to prevent fraud. Would you agree with that, Candidate B?",
+        "I couldn't agree more with your evaluation! So weighing everything up, are we both definitely in favor of choosing transactional security as our final consensus?"
+      ];
+
+      function updateMacro(sec) {
+        const m = Math.floor(sec / 60);
+        const s = sec % 60;
+        document.getElementById('pacerMacroClock').innerText = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+      }
+
+      function updatePacerClocks(aiSec, userSec) {
+        document.getElementById('pacerClockAi').innerText = aiSec + "s";
+        document.getElementById('pacerClockUser').innerText = userSec + "s";
+      }
+
+      function executePhase() {
+        if (phase >= 4) {
+          playEndBell();
+          setTimeout(() => {
+            currentStepIndex++;
+            renderCurrentStep();
+          }, 1200);
+          return;
+        }
+
+        if (phase % 2 === 0) {
+          document.getElementById('pacerCardAi').className = "pacer-card active-ai";
+          document.getElementById('pacerCardUser').className = "pacer-card";
+          document.getElementById('activeCandidateTitle').innerText = "Candidate A: Emily (Negotiating Decision)";
+          document.getElementById('activeCandidateInstruction').innerText = "Listen to Emily's proposal.";
+
+          let aiMicro = 15;
+          updatePacerClocks(aiMicro, 15);
+          speakAiPartner(decisionScript[phase / 2], () => {});
+
+          const aiInterval = trackInterval(setInterval(() => {
+            if (isPausedByUser) return;
+            aiMicro--;
+            global60--;
+            updateMacro(global60);
+            updatePacerClocks(aiMicro, 15);
+
+            if (aiMicro <= 0) {
+              clearInterval(aiInterval);
+              phase++;
+              executePhase();
+            }
+          }, 1000));
+
+        } else {
+          playStartBell();
+          document.getElementById('pacerCardAi').className = "pacer-card";
+          document.getElementById('pacerCardUser').className = "pacer-card active-user";
+          document.getElementById('activeCandidateTitle').innerText = "Candidate B: You (Negotiate Consensus)";
+          document.getElementById('activeCandidateInstruction').innerText = phase === 1 ? "Weigh her idea, agree or counter-propose (15s)." : "Close the negotiation and confirm the final decision (15s).";
+
+          let userMicro = 15;
+          updatePacerClocks(0, userMicro);
+
+          const userInterval = trackInterval(setInterval(() => {
+            if (isPausedByUser) return;
+            userMicro--;
+            global60--;
+            updateMacro(global60);
+            updatePacerClocks(0, userMicro);
+
+            if (userMicro <= 0) {
+              clearInterval(userInterval);
+              phase++;
+              executePhase();
+            }
+          }, 1000));
+        }
+      }
+
+      updateMacro(global60);
+      executePhase();
+    }
+
+    // PACER PARTE 4 TALK TOGETHER 1 (60s TOTAL • ALTERNANCIA 15s)
+    function startPart4DiscussionPacer() {
+      const pacerHud = document.getElementById('pacerHudBar');
+      pacerHud.style.display = 'grid';
+      document.getElementById('interlocutorSpeakingPill').style.display = 'none';
+      document.getElementById('subTurnBadge').style.display = 'none';
+
+      let global60 = 60;
+      let phase = 0;
+
+      const part4Script = [
+        "In my view, shopping has certainly transformed into a leisure pursuit because modern commercial centers are designed as experiential entertainment hubs with cinemas and restaurants. What's your perspective on that, Candidate B?",
+        "That's just what I was thinking! So on balance, while buying necessities is essential, retail therapy has become an undeniable recreational escape for modern families, hasn't it?"
+      ];
+
+      function updateMacro(sec) {
+        const m = Math.floor(sec / 60);
+        const s = sec % 60;
+        document.getElementById('pacerMacroClock').innerText = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+      }
+
+      function updatePacerClocks(aiSec, userSec) {
+        document.getElementById('pacerClockAi').innerText = aiSec + "s";
+        document.getElementById('pacerClockUser').innerText = userSec + "s";
+      }
+
+      function executePhase() {
+        if (phase >= 4) {
+          playEndBell();
+          setTimeout(() => {
+            currentStepIndex++;
+            renderCurrentStep();
+          }, 1200);
+          return;
+        }
+
+        if (phase % 2 === 0) {
+          document.getElementById('pacerCardAi').className = "pacer-card active-ai";
+          document.getElementById('pacerCardUser').className = "pacer-card";
+          document.getElementById('activeCandidateTitle').innerText = "Candidate A: Emily (AI Speaking)";
+          document.getElementById('activeCandidateInstruction').innerText = "Listen to Emily's argument.";
+
+          let aiMicro = 15;
+          updatePacerClocks(aiMicro, 15);
+          speakAiPartner(part4Script[phase / 2], () => {});
+
+          const aiInterval = trackInterval(setInterval(() => {
+            if (isPausedByUser) return;
+            aiMicro--;
+            global60--;
+            updateMacro(global60);
+            updatePacerClocks(aiMicro, 15);
+
+            if (aiMicro <= 0) {
+              clearInterval(aiInterval);
+              phase++;
+              executePhase();
+            }
+          }, 1000));
+
+        } else {
+          playStartBell();
+          document.getElementById('pacerCardAi').className = "pacer-card";
+          document.getElementById('pacerCardUser').className = "pacer-card active-user";
+          document.getElementById('activeCandidateTitle').innerText = "Candidate B: You (Your Turn to Speak!)";
+          document.getElementById('activeCandidateInstruction').innerText = "React to Emily's points and expand with your views (15s).";
+
+          let userMicro = 15;
+          updatePacerClocks(0, userMicro);
+
+          const userInterval = trackInterval(setInterval(() => {
+            if (isPausedByUser) return;
+            userMicro--;
+            global60--;
+            updateMacro(global60);
+            updatePacerClocks(0, userMicro);
+
+            if (userMicro <= 0) {
+              clearInterval(userInterval);
+              phase++;
+              executePhase();
+            }
+          }, 1000));
+        }
+      }
+
+      updateMacro(global60);
+      executePhase();
+    }
+
+    // PACER PARTE 4 TALK TOGETHER 2 (ADVERTISING - 60s TOTAL • ALTERNANCIA 15s)
+    function startPart4Round2DiscussionPacer() {
+      const pacerHud = document.getElementById('pacerHudBar');
+      pacerHud.style.display = 'grid';
+      document.getElementById('interlocutorSpeakingPill').style.display = 'none';
+      document.getElementById('subTurnBadge').style.display = 'none';
+
+      let global60 = 60;
+      let phase = 0;
+
+      const round2Script = [
+        "Would you agree that modern advertising exerts an unhealthy influence on our finances? In my view, targeted algorithms and influencer promotions systematically engineer artificial desires that drive reckless impulse buying. How do you view this?",
+        "I couldn't agree more with your assessment! On the other hand, advertising allows innovative startups to gain visibility, but critical consumer literacy remains essential to avoid debt, don't you think?"
+      ];
+
+      function updateMacro(sec) {
+        const m = Math.floor(sec / 60);
+        const s = sec % 60;
+        document.getElementById('pacerMacroClock').innerText = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+      }
+
+      function updatePacerClocks(aiSec, userSec) {
+        document.getElementById('pacerClockAi').innerText = aiSec + "s";
+        document.getElementById('pacerClockUser').innerText = userSec + "s";
+      }
+
+      function executePhase() {
+        if (phase >= 4) {
+          playEndBell();
+          setTimeout(() => {
+            currentStepIndex++;
+            renderCurrentStep();
+          }, 1200);
+          return;
+        }
+
+        if (phase % 2 === 0) {
+          document.getElementById('pacerCardAi').className = "pacer-card active-ai";
+          document.getElementById('pacerCardUser').className = "pacer-card";
+          document.getElementById('activeCandidateTitle').innerText = "Candidate A: Emily (AI Speaking)";
+          document.getElementById('activeCandidateInstruction').innerText = "Listen to Emily's argument on advertising.";
+
+          let aiMicro = 15;
+          updatePacerClocks(aiMicro, 15);
+          speakAiPartner(round2Script[phase / 2], () => {});
+
+          const aiInterval = trackInterval(setInterval(() => {
+            if (isPausedByUser) return;
+            aiMicro--;
+            global60--;
+            updateMacro(global60);
+            updatePacerClocks(aiMicro, 15);
+
+            if (aiMicro <= 0) {
+              clearInterval(aiInterval);
+              phase++;
+              executePhase();
+            }
+          }, 1000));
+
+        } else {
+          playStartBell();
+          document.getElementById('pacerCardAi').className = "pacer-card";
+          document.getElementById('pacerCardUser').className = "pacer-card active-user";
+          document.getElementById('activeCandidateTitle').innerText = "Candidate B: You (Your Turn to Speak!)";
+          document.getElementById('activeCandidateInstruction').innerText = "React to Emily's points and expand with your views on advertising (15s).";
+
+          let userMicro = 15;
+          updatePacerClocks(0, userMicro);
+
+          const userInterval = trackInterval(setInterval(() => {
+            if (isPausedByUser) return;
+            userMicro--;
+            global60--;
+            updateMacro(global60);
+            updatePacerClocks(0, userMicro);
+
+            if (userMicro <= 0) {
+              clearInterval(userInterval);
+              phase++;
+              executePhase();
+            }
+          }, 1000));
+        }
+      }
+
+      updateMacro(global60);
+      executePhase();
+    }
+
+    function renderSpecificScaffolding(data) {
+      const container = document.getElementById('scaffoldingGridContainer');
+      if (!data) return;
+
+      const col1Items = data.col1.map(it => `
+        <div class="stacked-lexicon-item">
+          <span class="item-en">${it.en}</span>
+          <span class="item-es">${it.es}</span>
+        </div>
+      `).join('');
+
+      const col2Items = data.col2.map(it => `
+        <div class="stacked-lexicon-item">
+          <span class="item-en">${it.en}</span>
+          <span class="item-es">${it.es}</span>
+        </div>
+      `).join('');
+
+      const col3Items = data.col3.map(it => `
+        <div class="stacked-lexicon-item">
+          <span class="item-en">${it.en}</span>
+          <span class="item-es">${it.es}</span>
+        </div>
+      `).join('');
+
+      container.innerHTML = `
+        <div class="toolkit-super-grid">
+          <div class="toolkit-card toolkit-card-purple">
+            <h4>${data.col1Title}</h4>
+            <div class="stacked-lexicon-list">${col1Items}</div>
+          </div>
+          <div class="toolkit-card toolkit-card-emerald">
+            <h4>${data.col2Title}</h4>
+            <div class="stacked-lexicon-list">${col2Items}</div>
+          </div>
+          <div class="toolkit-card toolkit-card-amber">
+            <h4>${data.col3Title}</h4>
+            <div class="stacked-lexicon-list">${col3Items}</div>
+          </div>
+        </div>
+      `;
+    }
+
+    function revealAndStartTurnTimer(sec, isPrep = false) {
+      clearInterval(turnTimerInterval);
+      turnSeconds = sec;
+      turnTimerRunning = true;
+
+      document.getElementById('interlocutorSpeakingPill').style.display = 'none';
+      const subBadge = document.getElementById('subTurnBadge');
+      subBadge.style.display = 'inline-flex';
+      subBadge.className = isPrep ? "turn-countdown-badge prep-state" : "turn-countdown-badge speaking-state";
+
+      updateTurnClockDisplay();
+
+      turnTimerInterval = trackInterval(setInterval(() => {
+        if (!turnTimerRunning || isPausedByUser) return;
+        if (turnSeconds <= 0) {
+          clearInterval(turnTimerInterval);
+          turnTimerRunning = false;
+          playEndBell();
+          setTimeout(() => {
+            currentStepIndex++;
+            renderCurrentStep();
+          }, 1200);
+          return;
+        }
+        turnSeconds--;
+        updateTurnClockDisplay();
+      }, 1000));
+    }
+
+    function updateTurnClockDisplay() {
+      const m = Math.floor(turnSeconds / 60);
+      const s = turnSeconds % 60;
+      const str = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+      const badgeText = document.getElementById('badgeTimerText');
+      const subBadge = document.getElementById('subTurnBadge');
+
+      if (badgeText) badgeText.innerText = str;
+
+      if (subBadge) {
+        if (turnSeconds <= 8) {
+          subBadge.classList.add('alert-pulse');
+        } else {
+          subBadge.classList.remove('alert-pulse');
+        }
+      }
+    }
+
+    function togglePauseSimulation() {
+      isPausedByUser = !isPausedByUser;
+      updatePauseButtonState(isPausedByUser);
+
+      if (isPausedByUser) {
+        turnTimerRunning = false;
+        if (speechGuardTimeout) clearTimeout(speechGuardTimeout);
+        if (isExaminerSpeaking || isAiPartnerSpeaking) {
+          window.speechSynthesis.cancel();
+        }
+      } else {
+        turnTimerRunning = true;
+      }
+    }
+
+    function updatePauseButtonState(paused) {
+      const btnIcon = document.getElementById('btnPauseIcon');
+      const btnText = document.getElementById('btnPauseText');
+      if (paused) {
+        btnIcon.innerText = "▶";
+        btnText.innerText = "Resume Simulation";
+      } else {
+        btnIcon.innerText = "⏸";
+        btnText.innerText = "Pause Simulation";
+      }
+    }
+
+    function addTurnSeconds(s) {
+      if (turnTimerRunning) {
+        turnSeconds += s;
+        updateTurnClockDisplay();
+      }
+    }
+
+    function nextMasterStep() {
+      const transModal = document.getElementById('modalPartTransition');
+      if (transModal) transModal.style.display = "none";
+      clearAllTimers();
+      turnTimerRunning = false;
+      currentStepIndex++;
+      renderCurrentStep();
+    }
+
+    function prevMasterPart() {
+      const transModal = document.getElementById('modalPartTransition');
+      if (transModal) transModal.style.display = "none";
+      clearAllTimers();
+      turnTimerRunning = false;
+      if (currentStepIndex > 0) {
+        currentStepIndex--;
+        const steps = getStepsSequence();
+        lastRenderedPart = steps[currentStepIndex].part;
+        renderCurrentStep();
+      }
+    }
+
+    window.speechSynthesis.onvoiceschanged = () => {
+      getSeniorBritishMaleVoice();
+      getAiPartnerFemaleVoice();
+    };
+  </script>
+</body>
+</html>
